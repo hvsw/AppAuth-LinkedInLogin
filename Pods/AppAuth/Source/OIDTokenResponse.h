@@ -26,17 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
     @see https://tools.ietf.org/html/rfc6749#section-3.2
     @see https://tools.ietf.org/html/rfc6749#section-4.1.3
  */
-@interface OIDTokenResponse : NSObject <NSCopying, NSSecureCoding> {
-  // property variables
-  OIDTokenRequest *_request;
-  NSString *_accessToken;
-  NSDate *_accessTokenExpirationDate;
-  NSString *_tokenType;
-  NSString *_idToken;
-  NSString *_refreshToken;
-  NSString *_scope;
-  NSDictionary<NSString *, NSObject<NSCopying> *> *_additionalParameters;
-}
+@interface OIDTokenResponse : NSObject <NSCopying, NSSecureCoding>
 
 /*! @brief The request which was serviced.
  */
@@ -67,12 +57,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*! @brief ID Token value associated with the authenticated session. Always present for the
         authorization code grant exchange when OpenID Connect is used, optional for responses to
-        access token refresh requests.
+        access token refresh requests. Note that AppAuth does NOT verify the JWT signature. Users
+        of AppAuth are encouraged to verifying the JWT signature using the validation library of
+        their choosing.
     @remarks id_token
     @see http://openid.net/specs/openid-connect-core-1_0.html#TokenResponse
     @see http://openid.net/specs/openid-connect-core-1_0.html#RefreshTokenResponse
     @see http://openid.net/specs/openid-connect-core-1_0.html#IDToken
- */
+    @see https://jwt.io
+    @discussion @c OIDIDToken can be used to parse the ID Token and extract the claims. As noted,
+        this class does not verify the JWT signature.
+*/
 @property(nonatomic, readonly, nullable) NSString *idToken;
 
 /*! @brief The refresh token, which can be used to obtain new access tokens using the same

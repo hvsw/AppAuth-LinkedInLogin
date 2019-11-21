@@ -51,7 +51,7 @@ confidentiality of the client secrets may not work well.
 
 #### Supported Versions
 
-AppAuth supports macOS (OS X) 10.8 and above.
+AppAuth supports macOS (OS X) 10.9 and above.
 
 #### Authorization Server Requirements
 
@@ -101,7 +101,7 @@ Then run `carthage bootstrap`.
 You can also use AppAuth as a static library. This requires linking the library
 and your project and including the headers.  Suggested configuration:
 
-1. Create an XCode Workspace.
+1. Create an Xcode Workspace.
 2. Add `AppAuth.xcodeproj` to your Workspace.
 3. Include libAppAuth as a linked library for your target (in the "General ->
 Linked Framework and Libraries" section of your target).
@@ -165,7 +165,7 @@ order to continue the authorization flow from the redirect.
 ```objc
 // property of the app's AppDelegate
 @property(nonatomic, strong, nullable)
-    id<OIDAuthorizationFlowSession> currentAuthorizationFlow;
+    id<OIDExternalUserAgentSession> currentAuthorizationFlow;
 ```
 
 And your main class, a property to store the auth state:
@@ -189,7 +189,7 @@ OIDAuthorizationRequest *request =
                                                   clientId:kClientID
                                                     scopes:@[OIDScopeOpenID,
                                                              OIDScopeProfile]
-                                               redirectURL:KRedirectURI
+                                               redirectURL:kRedirectURI
                                               responseType:OIDResponseTypeCode
                                       additionalParameters:nil];
 
@@ -224,7 +224,7 @@ authorization session (created in the previous session).
             options:(NSDictionary<NSString *, id> *)options {
   // Sends the URL to the current authorization flow (if any) which will
   // process it if it relates to an authorization response.
-  if ([_currentAuthorizationFlow resumeAuthorizationFlowWithURL:url]) {
+  if ([_currentAuthorizationFlow resumeExternalUserAgentFlowWithURL:url]) {
     _currentAuthorizationFlow = nil;
     return YES;
   }
@@ -333,21 +333,8 @@ needing to worry about token freshness.
 
 ## API Documentation
 
-Browse the [API documentation]
-(http://openid.github.io/AppAuth-iOS/docs/latest/annotated.html).
+Browse the [API documentation](http://openid.github.io/AppAuth-iOS/docs/latest/annotated.html).
 
 ## Included Samples
 
-You can try out the iOS sample included in the source distribution by opening
-`Example/Example.xcworkspace`. You can easily convert the Example
-workspace to a Pod workspace by deleting the `AppAuth` project, and
-[configuring the pod](#setup). You can also
-[try out the sample via CocoaPods](#try). Be sure to follow the instructions in
-[Example/README.md](Example/README.md) to configure your own OAuth client ID
-for use with the example.
-
-You can try out the macOS sample included in the source distribution by
-executing `pod install` in the `Example-Mac` folder, then opening 
-`Example-Mac.xcworkspace`. Be sure to follow the instructions in
-[Example-Mac/README.md](Example-Mac/README.md) to configure your own OAuth
-client ID for use with the example.
+Sample apps that explore core AppAuth features are available for iOS and macOS, follow the instructions in [Examples/README.md](Examples/README.md) to get started.

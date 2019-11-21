@@ -1,4 +1,4 @@
-/*! @file OIDAuthorizationService+IOS.h
+/*! @file OIDExternalUserAgentIOS.h
     @brief AppAuth iOS SDK
     @copyright
         Copyright 2016 Google Inc. All Rights Reserved.
@@ -18,27 +18,29 @@
 
 #import <UIKit/UIKit.h>
 
-#import "OIDAuthorizationService.h"
-#import "OIDExternalUserAgentSession.h"
+#import "OIDExternalUserAgent.h"
+
+@class SFSafariViewController;
 
 NS_ASSUME_NONNULL_BEGIN
 
-/*! @brief Provides iOS specific authorization request handling.
+/*! @brief An iOS specific external user-agent that uses the best possible user-agent available
+        depending on the version of iOS to present the request.
  */
-@interface OIDAuthorizationService (IOS)
+@interface OIDExternalUserAgentIOS : NSObject<OIDExternalUserAgent>
 
-/*! @brief Perform an authorization flow using \SFSafariViewController.
-    @param request The authorization request.
+- (nullable instancetype)init API_AVAILABLE(ios(11))
+    __deprecated_msg("This method will not work on iOS 13, use "
+                     "initWithPresentingViewController:presentingViewController");
+
+/*! @brief The designated initializer.
     @param presentingViewController The view controller from which to present the
         \SFSafariViewController.
-    @param callback The method called when the request has completed or failed.
-    @return A @c OIDExternalUserAgentSession instance which will terminate when it
-        receives a @c OIDExternalUserAgentSession.cancel message, or after processing a
-        @c OIDExternalUserAgentSession.resumeExternalUserAgentFlowWithURL: message.
  */
-+ (id<OIDExternalUserAgentSession>) presentAuthorizationRequest:(OIDAuthorizationRequest *)request
-    presentingViewController:(UIViewController *)presentingViewController
-                    callback:(OIDAuthorizationCallback)callback;
+- (nullable instancetype)initWithPresentingViewController:
+    (UIViewController *)presentingViewController
+    NS_DESIGNATED_INITIALIZER;
+
 @end
 
 NS_ASSUME_NONNULL_END

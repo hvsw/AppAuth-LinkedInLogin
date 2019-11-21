@@ -7,64 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03924A4FC510B502EFD0C3F067D96551 /* OIDAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E3C4A0E2C5048C931FE32A4EC455C1E4 /* OIDAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		075FF174C817DCA7B5AA5EFC866157D0 /* AppAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 393C478676482D55600BA91FC8F0B0D3 /* AppAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0969B1429C5897DA996C2275A3223B43 /* OIDTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B65D55898909A3561704F964B73CE0B9 /* OIDTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0152839543ABB9C1D8B2C4DE2FDA80DF /* OIDResponseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = D39D0E8F79DBC85D20596E285209797D /* OIDResponseTypes.m */; };
+		01C2E23A3D4116F2EB3F12A68D4120A7 /* OIDAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4A5E098B3541EA6D0EEAB7B6F7037C /* OIDAuthState.m */; };
+		0625798C1D4F087FBCBFEA94D67A2C41 /* OIDTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6157903105B4B644366322F0100F0 /* OIDTokenRequest.m */; };
+		0C2C830BD90087BE7A01907738CE65F9 /* OIDAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D49981EA1DAAD93D5218531B1DF95AC /* OIDAuthorizationService.m */; };
 		0C3DCB3BC5A6B38D63ACFD9094040204 /* Pods-AppAuth-LinkedInLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF62DAA0D42955D1B4F7F5DCE908DCD /* Pods-AppAuth-LinkedInLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12ABCC761802170D1AB0D87290886CCC /* OIDAuthorizationUICoordinatorIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 125314E4AA781C8517886BC80A489BAB /* OIDAuthorizationUICoordinatorIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13CD8EEE054C5A7FD5CF03005EAABA95 /* OIDResponseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3A23142116FECF85C9A5F66918215 /* OIDResponseTypes.m */; };
-		1C88CAD4858806E2A5F7EF48B62A408F /* OIDErrorUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1FEFCFF93738628374B264731C8728 /* OIDErrorUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26B5B28B0B0A28296B9C5F505ABDA6E2 /* OIDURLQueryComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823C9382E0A09B56C5908C8F70E9700 /* OIDURLQueryComponent.m */; };
-		26BEAB6735CF8D74890E2FD5266683CD /* OIDScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A98CC55F6046F6B936FD881C18DB1E6 /* OIDScopeUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27977056664359A7DA9223BBA7908C35 /* OIDRegistrationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BD607B6C3589D71CCD7A9F0DB6B3347A /* OIDRegistrationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2EB540CD6BA3AB71B7034983233DA8AF /* OIDServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BCA3757FDD5AB2A42D56BB94389BAA /* OIDServiceDiscovery.m */; };
-		2ED7B39C1EC5B1590A77AF2DE4AE51F1 /* OIDAuthorizationUICoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F7BD48672B64155F695637FA085146F /* OIDAuthorizationUICoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		329336C8BA7E423B343366BF7A98A88F /* OIDAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F5F093F6415B47872FB92E4EDF00C9 /* OIDAuthorizationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3942A46AE6F4D7716B18F9A520221B01 /* OIDAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8794FA04C73B59CDD2C1CFEFE0AD18A0 /* OIDAuthorizationService.m */; };
-		432A6E356357655E91AD4D66FA8A2C9E /* OIDServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = F06F3C16205BB4038A90ED66AB5B719F /* OIDServiceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44047BBF675B442741514E4AAA0F2E9D /* OIDGrantTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 017CDF2F0081EA89851ED265DF4B64B4 /* OIDGrantTypes.m */; };
-		4DCAB177625C0E859C97A066412BFF0E /* AppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA90374D4385BEFBC6D32591D6D40E1C /* AppAuth-dummy.m */; };
-		564C76AA12BA270CE77EED9B43813513 /* OIDGrantTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3775023EF130A055B624F8656A82B895 /* OIDGrantTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56ED0234B497124A09697C6C6920FA90 /* AppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 650C019BD7182F6B0DEDE5318572090A /* AppAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EF919AB270AFEF8D4BACB35BA1D8574 /* OIDAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E1F524165E632FE4C056929FD43212 /* OIDAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64C90FC5198249B84FE1A23F7489ED20 /* OIDRegistrationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DAC0B03D6A43E0CE99B0BFD8C47BB /* OIDRegistrationResponse.m */; };
-		6A011072616F78B596C3FB1CB0B64AC8 /* OIDAuthorizationService+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3872A1508396D8D2F34566F67495C8DA /* OIDAuthorizationService+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BA82925410DC9E082BAAC7C834B4A22 /* OIDTokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F8D3430ED57BF13BEDFD15E7EECF4737 /* OIDTokenUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CB66D4E08BA69DC38B3C889189B7FE6 /* OIDAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C4006150EF35E39AA3C02453AB579 /* OIDAuthorizationRequest.m */; };
-		6DABBD2BE8B9D2B6032CC4E140D64E30 /* OIDResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF4765D26772969BED2536566A9B5CC /* OIDResponseTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79D6CE8404767C7E5C7CA63822D36A51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DC375B8F4C52D54AA95FFAFACF0045 /* Foundation.framework */; };
-		7DC7726D7BE0CCA2FAFA75D66B00EDB4 /* OIDTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B05D778506983F1D4266EF86516AC9 /* OIDTokenResponse.m */; };
-		82C2D46E38F43E852B35F22751ED4507 /* OIDErrorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FDE166CA0FC993A277A62DEBDFA2AB /* OIDErrorUtilities.m */; };
-		8434E4F290BC2EC0211B115F16DEB7A1 /* OIDServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC3742A838C13443CF628F9F756E00B /* OIDServiceConfiguration.m */; };
-		95CC4E7F7EA6D10D8C24DF5F697A3384 /* OIDAuthorizationUICoordinatorIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = EB12B4BA7CC81DE10CADF9B79D259704 /* OIDAuthorizationUICoordinatorIOS.m */; };
-		A0A4546E7195821889EF02272FE4DEE1 /* OIDClientMetadataParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A279BAB78B2199C02A7E960C4606E93 /* OIDClientMetadataParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4B099DDDC47AD6A9FF453FE266F5C0E /* OIDFieldMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 438DD823E3E55FB62AB997079375D91F /* OIDFieldMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA38C623F13DF1A42752D14301BD839A /* OIDRegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A13AE32E9366C0FD99B3BC098CE2183B /* OIDRegistrationRequest.m */; };
-		AF7E431EB9E497E7DC6E026D1349B77B /* OIDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5972134D04B93897A8CC621FDCCE /* OIDError.m */; };
-		B0EB84EAF560AACAB6A2A69DC7244C1E /* OIDRegistrationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F77FE958004B978F25EAECC0B5069BEC /* OIDRegistrationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3BE734086F20D8A57A72CDB5C98746A /* OIDURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 62ACDBB14C9FF3CB677ABD8A148B97FB /* OIDURLQueryComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC2F30C67E7512FA6CFD98027CA01A06 /* OIDAuthorizationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB19AC840DE531B3520E955E3211E5E /* OIDAuthorizationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1002DFE50DC5EB22FD751A79CF2ED4D1 /* OIDResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4485603BEC4CF462B321CCF58768C361 /* OIDResponseTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10DD5C6A886FD74DF3423DE216150D6B /* OIDGrantTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA5E39E5201BAAC822B3B3B1899C600 /* OIDGrantTypes.m */; };
+		11B05DC9B74EB6DB583187377F400E76 /* OIDScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E3290200F0B69CB2958BE1754D596 /* OIDScopes.m */; };
+		12BC24B4A0643E3F3D52B859E49B9224 /* OIDGrantTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E07D5E22B0ED049775913D81D72FE1A /* OIDGrantTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12EB7D60DA915D42883F23C8D557D94D /* OIDScopeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8BF9CFFFCA3B07415DC0F8DA03B324 /* OIDScopeUtilities.m */; };
+		196EE5290BC2B1807F04DF318AC6FDEC /* OIDErrorUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A4AAF94A4F42364A30DDE80E53495F /* OIDErrorUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D1EED44A6E77889CBDB8C66742A0E44 /* OIDExternalUserAgentIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD629EA723F595CC1956D246AE06259 /* OIDExternalUserAgentIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F435EDC2B92E77B8B27DFDBA48BC32C /* OIDExternalUserAgentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FE201AFDDCBFE6737113569D974FAD28 /* OIDExternalUserAgentRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C346D573DE98C091AD7A9CC8FFB028D /* OIDAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FB4065CEB4575207CBB1D712346C6A /* OIDAuthorizationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C819FFCFEA8DF6DF64B1CEC39D78447 /* OIDAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BCB582152699054038401F122A9C08D /* OIDAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F8ABA2C3F8A3D693C7BF2FB001DD803 /* OIDFieldMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 66929E2BC03F513C2BB80D897A367969 /* OIDFieldMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FA07E7F32E863A5F2D6BED8720FCF60 /* AppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 192E18C833C31BA2FCAE436748042B53 /* AppAuth-dummy.m */; };
+		4467558A7C5599714EB0760DB09537E3 /* OIDAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6830FCE2ED791AA7B6EA8F097FEF5DDC /* OIDAuthorizationRequest.m */; };
+		46F81DA2CCF16E4F1A6C8DC05C359E50 /* OIDServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 12051F6F54676415E83D23ED6B845C5E /* OIDServiceConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5017BADE0EA73EB4DB278CD6E49610C5 /* OIDURLSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED83967D5CDA49B4FD67469A6E375BD /* OIDURLSessionProvider.m */; };
+		55DFE67EFF789A1C677A5E59A1683A79 /* OIDScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD64C1255041485979A19456475BC54 /* OIDScopes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BA17909CAC54D4E72F22A8E587CF212 /* OIDIDToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B7C4F5EE853E4D68B2EBC8D1199386 /* OIDIDToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CF58556EBA59BAD43CF20579444A678 /* OIDServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = B89ECEDAABC19A6C96292495E6E65B2E /* OIDServiceDiscovery.m */; };
+		5ED505FD1C70BD69999423CD62CE1E2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DC375B8F4C52D54AA95FFAFACF0045 /* Foundation.framework */; };
+		5F10849846B08D5D58249FFB0B459569 /* OIDEndSessionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D8EFF8C03E2333700A4B68A1695364 /* OIDEndSessionResponse.m */; };
+		61396B09D9E25AC9EB3052B15252A8F4 /* OIDTokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDE1566987DD6FA36AEBEB317748189 /* OIDTokenUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AE5592078C9D5478F4235E29DC47EB /* OIDTokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 24141791666634344EABD343C3574867 /* OIDTokenUtilities.m */; };
+		631F899648B002EA203B24B08F436161 /* OIDURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = A681505DE06C2AFF4D50B311140BBA8A /* OIDURLQueryComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64B210E126671B28A850DA4F8FDD2A57 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224A0D49BF8F4C4D56DFAA871DE0A3B6 /* SafariServices.framework */; };
+		683BA3B3DCBF3435502F0947E87807FD /* OIDEndSessionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E36EFB90012FBB24E82E4755F3FADF55 /* OIDEndSessionResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		691D32D5073F49FA89C31D57BC8BDDB6 /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DD9EFB5D0A09A51A386ED6733C530 /* OIDExternalUserAgentIOSCustomBrowser.m */; };
+		6E156A8610E63679373373C00E1801C1 /* OIDErrorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 077FF71987396284606A993484BBDC1C /* OIDErrorUtilities.m */; };
+		6FB6A62E1116098825F98D1F11267488 /* OIDAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BCD0DD773269AEFBEAF901FD245DB2E /* OIDAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8246351974B0B8B64D32D37086E4F7B9 /* OIDClientMetadataParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D07E893A57E094E78CCDA60AB2E69DA /* OIDClientMetadataParameters.m */; };
+		83930DD31A581842587C96A1C0676E7C /* OIDTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E30F9373C0C16FC47D22A365C89552 /* OIDTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87B0CADD1F0ECB9BD2E6762E5C739113 /* OIDAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE0300FDA9E45296A6FD88C271E267C /* OIDAuthState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		888CD852FF2095A51FBB186ABAA0C077 /* OIDExternalUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CABD283B8C12B4B12C1474D8702922 /* OIDExternalUserAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AF289C891632EFE44E5D40972303FAF /* AppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA8C16D20BEE1B7D6F4B54488A132BA /* AppAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F26AEDCF18A0BDC1E84418EB59991B9 /* OIDServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 175C900194A59E959D48E6F4E4F50616 /* OIDServiceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		916FC39D2F1F85BCAF4111CE25768E5B /* OIDError.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6A6C6187F34402336998AAD09F5C99 /* OIDError.m */; };
+		945DD39C25F48C62885FA19F882AF52C /* OIDFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 38241AA6BF0EADA258EB4ECFD63CD721 /* OIDFieldMapping.m */; };
+		95616B903DEE69B473FA053C24AFB50C /* OIDTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F75A2F32B03D5B714BBCBE65B097DFD1 /* OIDTokenResponse.m */; };
+		9590A1C50BDBA6CB63766158C5924F05 /* OIDIDToken.m in Sources */ = {isa = PBXBuildFile; fileRef = EA63DE6AC308758CB57B24CE2EBFA48A /* OIDIDToken.m */; };
+		9CDB50C34FB5FB44A85706DC92C61821 /* OIDURLSessionProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 85439FF27E8AFC26911990385D1B162B /* OIDURLSessionProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DDEDBF7F08C54AC7D9EF45FC797276F /* OIDAuthState+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A351D9E6F5B8120080DFF6195EFFA83 /* OIDAuthState+IOS.m */; };
+		9E135206AA44E77AB09B36EB19D7FAD9 /* AppAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD704AB48F56904EA6EA7CA0907C14B /* AppAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E14F8E42F637645423E716CE82B751C /* OIDExternalUserAgentIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6710EB1EBA32A1497A40FE88E3297CAB /* OIDExternalUserAgentIOS.m */; };
+		A392470D6AE1EB69F8F5BE0B7407F81F /* OIDServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD56B869BCF9E4E6E30BD39B67CAFF /* OIDServiceConfiguration.m */; };
+		A76EDEC6D4D5485A2A1CCAC1C9D58A51 /* OIDAuthState+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 093C139CF9CA54237E7B07DC987C689B /* OIDAuthState+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A76F3B43680DA68515A1A5EB1FFFE89E /* OIDRegistrationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C5E9CFDCCE7CCFB5A48CAE9B43050D4 /* OIDRegistrationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF854D8F01C4E8ABAF6DC97266B65C24 /* OIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1664F4429F5BA151784CCEF46FB3993B /* OIDDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B17C8B73B9D322B10D6587417D6EC9A0 /* OIDRegistrationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C04A76A110E706288379CA99AD1A5 /* OIDRegistrationResponse.m */; };
+		BD7223FF2510B006EBB1B93D2207A413 /* OIDEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E54E8767A428E82DBF5BF089EBD35530 /* OIDEndSessionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFC4D9A5C11163B48F2C8AC404AC8CE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DC375B8F4C52D54AA95FFAFACF0045 /* Foundation.framework */; };
-		C2ADC6C7E61264700CBA1267EFDBBAA6 /* OIDError.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DFCC18A080FF1BDD6EFB6829507089 /* OIDError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C51CDEEF4241F44FA5AFB6FDCBCEB1AC /* OIDScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = D56C55B08B97228891B378A834B1BA9A /* OIDScopes.m */; };
-		C5FF293780CC35B2F540148DDB549E73 /* OIDTokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 00564411F7AE532C9028A5CE4A6D5220 /* OIDTokenUtilities.m */; };
-		CF60C07E2CE4E767582889115F4F035A /* OIDAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 415AAA87D4BAA9A62E2FEEFEF33BEB52 /* OIDAuthorizationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D11CE0965287B77DC48DA8C8DE77AD3B /* OIDTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 146D4FDC72AC23A4D8C27C3561BC1389 /* OIDTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D90217B1368973B7245B7C1053004285 /* OIDAuthState+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 798CDBBFC8F4715DDF47BB16460583A0 /* OIDAuthState+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBE3964B78FD7E41EDD1244B499888CF /* OIDFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 937F07ADD5074DE356CADBF071CB4548 /* OIDFieldMapping.m */; };
-		DD75BD3B09E655BE555CE741655A8218 /* OIDTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B325CCD4FC8C31258998BEDD13F7D488 /* OIDTokenRequest.m */; };
-		DE5CD7808B19410460D99DAA016E8AC1 /* OIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 167EC616AE98586C19B1633D8588B04D /* OIDDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE7B1C9FE074707110F7C88088CABF65 /* OIDAuthorizationService+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 492D1A455C957C3E96C5209E7C628FF5 /* OIDAuthorizationService+IOS.m */; };
-		DEC7F17AED9B58479A6A4CA0E9AC3B10 /* OIDScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = D664FBCB528A4A9351C2425BBB438E88 /* OIDScopes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8CB6E6773A88BD425DB3F067BC1AB0A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224A0D49BF8F4C4D56DFAA871DE0A3B6 /* SafariServices.framework */; };
-		EA5AE10250FB5EF32F768B536F8AA976 /* OIDAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA15D878079581DCC56B0F1DF7C997E /* OIDAuthState.m */; };
+		C4B68BAE984AE1F5CF5D4B58CCD5E270 /* OIDAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FD557907283488435900ED676FD5C649 /* OIDAuthorizationResponse.m */; };
+		C55AC3D36BE9C3EF442825FD90256B31 /* OIDEndSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4755195091959144CBEAB7CBA04FC7C /* OIDEndSessionRequest.m */; };
+		C97C1EF94964A7C546FC79FC52D70F54 /* OIDAuthorizationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3EEC1A5FF66A9FDAB0DB85050B21D4 /* OIDAuthorizationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFCBBF114C163DAEE4EE4836F8E2B486 /* OIDError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D0E51A0E5280A1354F591BCDD72BE24 /* OIDError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6119ECDDD86097CD4BBF7C222A48D6E /* OIDRegistrationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 378644FB55A6A1F773B7BC5886C7ED62 /* OIDRegistrationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6D1C5DB4551490D009DEB6610B93267 /* OIDExternalUserAgentIOSCustomBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 192FBA164C891D1C220DC8B54A35D027 /* OIDExternalUserAgentIOSCustomBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D97315F36B153B562BB4AC9647D3C7D0 /* OIDAuthorizationService+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B9EC132C9A61423BFE948453568F64DE /* OIDAuthorizationService+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE7A32720880357709409C28B69A0809 /* OIDExternalUserAgentSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 69670F01462FE5A637ACE0E28CB1CCD2 /* OIDExternalUserAgentSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E08259975E0082C14EEC0166475180EC /* AppAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3742496E895AFFF8545128973829F013 /* AppAuthCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5C5AAE3B048AD0A4D043B6A49E86A54 /* OIDScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C57B4F31054C8083CFA2B14A7A422BF2 /* OIDScopeUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E78DB212800161EDC38CD7C4C685C105 /* OIDRegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 97833D7B535C3FE2422216461DEF8469 /* OIDRegistrationRequest.m */; };
 		EAB0250D209C3DE9A578689CFCC00FAA /* Pods-AppAuth-LinkedInLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6716822DCF61BF19684DD504F03E6B /* Pods-AppAuth-LinkedInLogin-dummy.m */; };
-		F89FD5EB56774AF5406AE939630A165B /* OIDClientMetadataParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = DD86C97F296DABFB7B82568B897464B7 /* OIDClientMetadataParameters.m */; };
-		FAC1E98B69F83BB9427FA1BA0677599E /* OIDScopeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B7CBC4E79E8FE100390C7DD918240E /* OIDScopeUtilities.m */; };
-		FB1B17D36BA23BE45EEB85C5050DF9D3 /* OIDAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D6733CB4977A8A4B365A785E68FC733 /* OIDAuthState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB9FADF1D6B11BAC8CACB0457071F75C /* OIDAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 952F971F1851AB479965D726A8627F2D /* OIDAuthorizationResponse.m */; };
-		FD02270749C7312926D7326ED3814128 /* OIDAuthState+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 32076BD464EFBC3E0EF74FE19FD9D10A /* OIDAuthState+IOS.m */; };
-		FD36F0310ADF80F0089F96C4BEBBFA09 /* OIDServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E012B70FBBD5E711D00E651CEE2AF36B /* OIDServiceConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDCD3213B10DAA43DD513370B93B50BB /* OIDTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD2C271B947844FED80C2AB9C580B7A /* OIDTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F33D75E9552705EBCFEF5F880F29CE70 /* OIDAuthorizationService+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5D948CB0C948CB3757C44EC2F84D3 /* OIDAuthorizationService+IOS.m */; };
+		F723A4D0B2DB10FA3B380F9389B207E6 /* OIDAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 143CF85DFC82FE9FFF228B39F92383AA /* OIDAuthorizationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB28B2A78D7BF7CAC5E3E262A7426D2F /* OIDURLQueryComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A23EF28235302061678ED1BEBCEC20 /* OIDURLQueryComponent.m */; };
+		FC5026A2B5B44C4238DC6CAE6FB5EB84 /* OIDClientMetadataParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF945C0947E0BDA7311F760E86FFA60 /* OIDClientMetadataParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,84 +85,97 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7503829C3B04BBAE1481AE1EAC80458E;
+			remoteGlobalIDString = 0F1FA08409E1DEAC5B4C96178C9C0F8C;
 			remoteInfo = AppAuth;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00564411F7AE532C9028A5CE4A6D5220 /* OIDTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenUtilities.m; path = Source/OIDTokenUtilities.m; sourceTree = "<group>"; };
-		017CDF2F0081EA89851ED265DF4B64B4 /* OIDGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDGrantTypes.m; path = Source/OIDGrantTypes.m; sourceTree = "<group>"; };
-		07FDE166CA0FC993A277A62DEBDFA2AB /* OIDErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDErrorUtilities.m; path = Source/OIDErrorUtilities.m; sourceTree = "<group>"; };
-		0CA15D878079581DCC56B0F1DF7C997E /* OIDAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthState.m; path = Source/OIDAuthState.m; sourceTree = "<group>"; };
-		125314E4AA781C8517886BC80A489BAB /* OIDAuthorizationUICoordinatorIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationUICoordinatorIOS.h; path = Source/iOS/OIDAuthorizationUICoordinatorIOS.h; sourceTree = "<group>"; };
-		146D4FDC72AC23A4D8C27C3561BC1389 /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/OIDTokenRequest.h; sourceTree = "<group>"; };
-		167EC616AE98586C19B1633D8588B04D /* OIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDDefines.h; path = Source/OIDDefines.h; sourceTree = "<group>"; };
-		16DFCC18A080FF1BDD6EFB6829507089 /* OIDError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDError.h; path = Source/OIDError.h; sourceTree = "<group>"; };
+		02E30F9373C0C16FC47D22A365C89552 /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/OIDTokenRequest.h; sourceTree = "<group>"; };
+		077FF71987396284606A993484BBDC1C /* OIDErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDErrorUtilities.m; path = Source/OIDErrorUtilities.m; sourceTree = "<group>"; };
+		093C139CF9CA54237E7B07DC987C689B /* OIDAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthState+IOS.h"; path = "Source/iOS/OIDAuthState+IOS.h"; sourceTree = "<group>"; };
+		0E07D5E22B0ED049775913D81D72FE1A /* OIDGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDGrantTypes.h; path = Source/OIDGrantTypes.h; sourceTree = "<group>"; };
+		0E8BF9CFFFCA3B07415DC0F8DA03B324 /* OIDScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopeUtilities.m; path = Source/OIDScopeUtilities.m; sourceTree = "<group>"; };
+		0FF945C0947E0BDA7311F760E86FFA60 /* OIDClientMetadataParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDClientMetadataParameters.h; path = Source/OIDClientMetadataParameters.h; sourceTree = "<group>"; };
+		12051F6F54676415E83D23ED6B845C5E /* OIDServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceConfiguration.h; path = Source/OIDServiceConfiguration.h; sourceTree = "<group>"; };
+		143CF85DFC82FE9FFF228B39F92383AA /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
+		1664F4429F5BA151784CCEF46FB3993B /* OIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDDefines.h; path = Source/OIDDefines.h; sourceTree = "<group>"; };
+		175C900194A59E959D48E6F4E4F50616 /* OIDServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceDiscovery.h; path = Source/OIDServiceDiscovery.h; sourceTree = "<group>"; };
+		192E18C833C31BA2FCAE436748042B53 /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
+		192FBA164C891D1C220DC8B54A35D027 /* OIDExternalUserAgentIOSCustomBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOSCustomBrowser.h; path = Source/iOS/OIDExternalUserAgentIOSCustomBrowser.h; sourceTree = "<group>"; };
+		1A226182DEE0FCF35B4669F3D1CD8AF5 /* AppAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.xcconfig; sourceTree = "<group>"; };
 		224A0D49BF8F4C4D56DFAA871DE0A3B6 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		22D8EFF8C03E2333700A4B68A1695364 /* OIDEndSessionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionResponse.m; path = Source/OIDEndSessionResponse.m; sourceTree = "<group>"; };
+		24141791666634344EABD343C3574867 /* OIDTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenUtilities.m; path = Source/OIDTokenUtilities.m; sourceTree = "<group>"; };
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		32076BD464EFBC3E0EF74FE19FD9D10A /* OIDAuthState+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthState+IOS.m"; path = "Source/iOS/OIDAuthState+IOS.m"; sourceTree = "<group>"; };
-		3775023EF130A055B624F8656A82B895 /* OIDGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDGrantTypes.h; path = Source/OIDGrantTypes.h; sourceTree = "<group>"; };
-		3872A1508396D8D2F34566F67495C8DA /* OIDAuthorizationService+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthorizationService+IOS.h"; path = "Source/iOS/OIDAuthorizationService+IOS.h"; sourceTree = "<group>"; };
-		38BCA3757FDD5AB2A42D56BB94389BAA /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/OIDServiceDiscovery.m; sourceTree = "<group>"; };
-		393C478676482D55600BA91FC8F0B0D3 /* AppAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-umbrella.h"; sourceTree = "<group>"; };
-		3A98CC55F6046F6B936FD881C18DB1E6 /* OIDScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopeUtilities.h; path = Source/OIDScopeUtilities.h; sourceTree = "<group>"; };
-		415AAA87D4BAA9A62E2FEEFEF33BEB52 /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
-		438DD823E3E55FB62AB997079375D91F /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/OIDFieldMapping.h; sourceTree = "<group>"; };
-		4427A661BB3025535ABE0167A3328BE4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46CA5972134D04B93897A8CC621FDCCE /* OIDError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDError.m; path = Source/OIDError.m; sourceTree = "<group>"; };
-		492D1A455C957C3E96C5209E7C628FF5 /* OIDAuthorizationService+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthorizationService+IOS.m"; path = "Source/iOS/OIDAuthorizationService+IOS.m"; sourceTree = "<group>"; };
-		493DAC0B03D6A43E0CE99B0BFD8C47BB /* OIDRegistrationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationResponse.m; path = Source/OIDRegistrationResponse.m; sourceTree = "<group>"; };
-		50E1F524165E632FE4C056929FD43212 /* OIDAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateErrorDelegate.h; path = Source/OIDAuthStateErrorDelegate.h; sourceTree = "<group>"; };
-		5F7BD48672B64155F695637FA085146F /* OIDAuthorizationUICoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationUICoordinator.h; path = Source/OIDAuthorizationUICoordinator.h; sourceTree = "<group>"; };
-		62ACDBB14C9FF3CB677ABD8A148B97FB /* OIDURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLQueryComponent.h; path = Source/OIDURLQueryComponent.h; sourceTree = "<group>"; };
-		650C019BD7182F6B0DEDE5318572090A /* AppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuth.h; path = Source/AppAuth.h; sourceTree = "<group>"; };
-		6823C9382E0A09B56C5908C8F70E9700 /* OIDURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLQueryComponent.m; path = Source/OIDURLQueryComponent.m; sourceTree = "<group>"; };
+		261E614C4F7DE4915D773375B6F22796 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A351D9E6F5B8120080DFF6195EFFA83 /* OIDAuthState+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthState+IOS.m"; path = "Source/iOS/OIDAuthState+IOS.m"; sourceTree = "<group>"; };
+		2AE0300FDA9E45296A6FD88C271E267C /* OIDAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthState.h; path = Source/OIDAuthState.h; sourceTree = "<group>"; };
+		2C8E3290200F0B69CB2958BE1754D596 /* OIDScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopes.m; path = Source/OIDScopes.m; sourceTree = "<group>"; };
+		32A23EF28235302061678ED1BEBCEC20 /* OIDURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLQueryComponent.m; path = Source/OIDURLQueryComponent.m; sourceTree = "<group>"; };
+		3742496E895AFFF8545128973829F013 /* AppAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuthCore.h; path = Source/AppAuthCore.h; sourceTree = "<group>"; };
+		378644FB55A6A1F773B7BC5886C7ED62 /* OIDRegistrationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationRequest.h; path = Source/OIDRegistrationRequest.h; sourceTree = "<group>"; };
+		38241AA6BF0EADA258EB4ECFD63CD721 /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/OIDFieldMapping.m; sourceTree = "<group>"; };
+		3D07E893A57E094E78CCDA60AB2E69DA /* OIDClientMetadataParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDClientMetadataParameters.m; path = Source/OIDClientMetadataParameters.m; sourceTree = "<group>"; };
+		3D0E51A0E5280A1354F591BCDD72BE24 /* OIDError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDError.h; path = Source/OIDError.h; sourceTree = "<group>"; };
+		4485603BEC4CF462B321CCF58768C361 /* OIDResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDResponseTypes.h; path = Source/OIDResponseTypes.h; sourceTree = "<group>"; };
+		4BCD0DD773269AEFBEAF901FD245DB2E /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
+		4D1DD9EFB5D0A09A51A386ED6733C530 /* OIDExternalUserAgentIOSCustomBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOSCustomBrowser.m; path = Source/iOS/OIDExternalUserAgentIOSCustomBrowser.m; sourceTree = "<group>"; };
+		63B7C4F5EE853E4D68B2EBC8D1199386 /* OIDIDToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDIDToken.h; path = Source/OIDIDToken.h; sourceTree = "<group>"; };
+		6579F38BCE8077EB234928BCD85EDC51 /* AppAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppAuth.modulemap; sourceTree = "<group>"; };
+		66929E2BC03F513C2BB80D897A367969 /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/OIDFieldMapping.h; sourceTree = "<group>"; };
+		6710EB1EBA32A1497A40FE88E3297CAB /* OIDExternalUserAgentIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOS.m; path = Source/iOS/OIDExternalUserAgentIOS.m; sourceTree = "<group>"; };
+		6830FCE2ED791AA7B6EA8F097FEF5DDC /* OIDAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationRequest.m; path = Source/OIDAuthorizationRequest.m; sourceTree = "<group>"; };
+		69670F01462FE5A637ACE0E28CB1CCD2 /* OIDExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentSession.h; path = Source/OIDExternalUserAgentSession.h; sourceTree = "<group>"; };
+		6BD64C1255041485979A19456475BC54 /* OIDScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopes.h; path = Source/OIDScopes.h; sourceTree = "<group>"; };
 		6C6716822DCF61BF19684DD504F03E6B /* Pods-AppAuth-LinkedInLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppAuth-LinkedInLogin-dummy.m"; sourceTree = "<group>"; };
-		6CB19AC840DE531B3520E955E3211E5E /* OIDAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationService.h; path = Source/OIDAuthorizationService.h; sourceTree = "<group>"; };
-		70F5F093F6415B47872FB92E4EDF00C9 /* OIDAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationResponse.h; path = Source/OIDAuthorizationResponse.h; sourceTree = "<group>"; };
+		6D49981EA1DAAD93D5218531B1DF95AC /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/OIDAuthorizationService.m; sourceTree = "<group>"; };
+		6ED83967D5CDA49B4FD67469A6E375BD /* OIDURLSessionProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLSessionProvider.m; path = Source/OIDURLSessionProvider.m; sourceTree = "<group>"; };
 		76A632C868224A025A20BEDA66B5F2D5 /* Pods-AppAuth-LinkedInLogin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppAuth-LinkedInLogin-frameworks.sh"; sourceTree = "<group>"; };
-		798CDBBFC8F4715DDF47BB16460583A0 /* OIDAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthState+IOS.h"; path = "Source/iOS/OIDAuthState+IOS.h"; sourceTree = "<group>"; };
+		79FB4065CEB4575207CBB1D712346C6A /* OIDAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationResponse.h; path = Source/OIDAuthorizationResponse.h; sourceTree = "<group>"; };
 		7A136CEF9D7B6E39FC1B6AC6C8B74957 /* Pods-AppAuth-LinkedInLogin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppAuth-LinkedInLogin-resources.sh"; sourceTree = "<group>"; };
-		7A279BAB78B2199C02A7E960C4606E93 /* OIDClientMetadataParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDClientMetadataParameters.h; path = Source/OIDClientMetadataParameters.h; sourceTree = "<group>"; };
-		843C4006150EF35E39AA3C02453AB579 /* OIDAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationRequest.m; path = Source/OIDAuthorizationRequest.m; sourceTree = "<group>"; };
-		8794FA04C73B59CDD2C1CFEFE0AD18A0 /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/OIDAuthorizationService.m; sourceTree = "<group>"; };
-		8DB3A23142116FECF85C9A5F66918215 /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/OIDResponseTypes.m; sourceTree = "<group>"; };
-		937F07ADD5074DE356CADBF071CB4548 /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/OIDFieldMapping.m; sourceTree = "<group>"; };
+		7C5E9CFDCCE7CCFB5A48CAE9B43050D4 /* OIDRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationResponse.h; path = Source/OIDRegistrationResponse.h; sourceTree = "<group>"; };
+		7F0C04A76A110E706288379CA99AD1A5 /* OIDRegistrationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationResponse.m; path = Source/OIDRegistrationResponse.m; sourceTree = "<group>"; };
+		81A4AAF94A4F42364A30DDE80E53495F /* OIDErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDErrorUtilities.h; path = Source/OIDErrorUtilities.h; sourceTree = "<group>"; };
+		85439FF27E8AFC26911990385D1B162B /* OIDURLSessionProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLSessionProvider.h; path = Source/OIDURLSessionProvider.h; sourceTree = "<group>"; };
+		8AF5D948CB0C948CB3757C44EC2F84D3 /* OIDAuthorizationService+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthorizationService+IOS.m"; path = "Source/iOS/OIDAuthorizationService+IOS.m"; sourceTree = "<group>"; };
+		8BCB582152699054038401F122A9C08D /* OIDAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateErrorDelegate.h; path = Source/OIDAuthStateErrorDelegate.h; sourceTree = "<group>"; };
 		94DC375B8F4C52D54AA95FFAFACF0045 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		952F971F1851AB479965D726A8627F2D /* OIDAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationResponse.m; path = Source/OIDAuthorizationResponse.m; sourceTree = "<group>"; };
-		9B1FEFCFF93738628374B264731C8728 /* OIDErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDErrorUtilities.h; path = Source/OIDErrorUtilities.h; sourceTree = "<group>"; };
-		9D6733CB4977A8A4B365A785E68FC733 /* OIDAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthState.h; path = Source/OIDAuthState.h; sourceTree = "<group>"; };
-		A13AE32E9366C0FD99B3BC098CE2183B /* OIDRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationRequest.m; path = Source/OIDRegistrationRequest.m; sourceTree = "<group>"; };
+		97833D7B535C3FE2422216461DEF8469 /* OIDRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationRequest.m; path = Source/OIDRegistrationRequest.m; sourceTree = "<group>"; };
+		97F6157903105B4B644366322F0100F0 /* OIDTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenRequest.m; path = Source/OIDTokenRequest.m; sourceTree = "<group>"; };
+		982C2C5DDD5B26D2881642F78423E4B6 /* AppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-prefix.pch"; sourceTree = "<group>"; };
+		9CDE1566987DD6FA36AEBEB317748189 /* OIDTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenUtilities.h; path = Source/OIDTokenUtilities.h; sourceTree = "<group>"; };
+		9D3EEC1A5FF66A9FDAB0DB85050B21D4 /* OIDAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationService.h; path = Source/OIDAuthorizationService.h; sourceTree = "<group>"; };
+		9DD2C271B947844FED80C2AB9C580B7A /* OIDTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenResponse.h; path = Source/OIDTokenResponse.h; sourceTree = "<group>"; };
 		A19333AFA2B48B560AFB46A2B79C00FA /* Pods-AppAuth-LinkedInLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppAuth-LinkedInLogin.release.xcconfig"; sourceTree = "<group>"; };
-		B325CCD4FC8C31258998BEDD13F7D488 /* OIDTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenRequest.m; path = Source/OIDTokenRequest.m; sourceTree = "<group>"; };
-		B65D55898909A3561704F964B73CE0B9 /* OIDTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenResponse.h; path = Source/OIDTokenResponse.h; sourceTree = "<group>"; };
-		BA90374D4385BEFBC6D32591D6D40E1C /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
-		BD607B6C3589D71CCD7A9F0DB6B3347A /* OIDRegistrationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationRequest.h; path = Source/OIDRegistrationRequest.h; sourceTree = "<group>"; };
-		BDC3742A838C13443CF628F9F756E00B /* OIDServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceConfiguration.m; path = Source/OIDServiceConfiguration.m; sourceTree = "<group>"; };
-		C2B05D778506983F1D4266EF86516AC9 /* OIDTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenResponse.m; path = Source/OIDTokenResponse.m; sourceTree = "<group>"; };
+		A681505DE06C2AFF4D50B311140BBA8A /* OIDURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLQueryComponent.h; path = Source/OIDURLQueryComponent.h; sourceTree = "<group>"; };
+		AAA5E39E5201BAAC822B3B3B1899C600 /* OIDGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDGrantTypes.m; path = Source/OIDGrantTypes.m; sourceTree = "<group>"; };
+		B89ECEDAABC19A6C96292495E6E65B2E /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/OIDServiceDiscovery.m; sourceTree = "<group>"; };
+		B9EC132C9A61423BFE948453568F64DE /* OIDAuthorizationService+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthorizationService+IOS.h"; path = "Source/iOS/OIDAuthorizationService+IOS.h"; sourceTree = "<group>"; };
+		C57B4F31054C8083CFA2B14A7A422BF2 /* OIDScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopeUtilities.h; path = Source/OIDScopeUtilities.h; sourceTree = "<group>"; };
 		C57DB492E16F070B2EB6324596FEC8FC /* Pods-AppAuth-LinkedInLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppAuth-LinkedInLogin.debug.xcconfig"; sourceTree = "<group>"; };
-		CAF4765D26772969BED2536566A9B5CC /* OIDResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDResponseTypes.h; path = Source/OIDResponseTypes.h; sourceTree = "<group>"; };
+		CB6A6C6187F34402336998AAD09F5C99 /* OIDError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDError.m; path = Source/OIDError.m; sourceTree = "<group>"; };
+		CCD629EA723F595CC1956D246AE06259 /* OIDExternalUserAgentIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOS.h; path = Source/iOS/OIDExternalUserAgentIOS.h; sourceTree = "<group>"; };
 		CD69CA81765AFC8237BBCFA4722C0104 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppAuth.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D28C29485581AAABF3E2E9E24EBD15C0 /* AppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-prefix.pch"; sourceTree = "<group>"; };
-		D56C55B08B97228891B378A834B1BA9A /* OIDScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopes.m; path = Source/OIDScopes.m; sourceTree = "<group>"; };
-		D664FBCB528A4A9351C2425BBB438E88 /* OIDScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopes.h; path = Source/OIDScopes.h; sourceTree = "<group>"; };
-		D7C60E5F2467CD1843DD5948057FDC79 /* AppAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppAuth.modulemap; sourceTree = "<group>"; };
-		DD86C97F296DABFB7B82568B897464B7 /* OIDClientMetadataParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDClientMetadataParameters.m; path = Source/OIDClientMetadataParameters.m; sourceTree = "<group>"; };
+		D39D0E8F79DBC85D20596E285209797D /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/OIDResponseTypes.m; sourceTree = "<group>"; };
+		D4755195091959144CBEAB7CBA04FC7C /* OIDEndSessionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionRequest.m; path = Source/OIDEndSessionRequest.m; sourceTree = "<group>"; };
 		DDCB7236CA92ECE4D15BE6723BF18AEA /* Pods-AppAuth-LinkedInLogin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppAuth-LinkedInLogin-acknowledgements.plist"; sourceTree = "<group>"; };
 		DE8462EB9282A01DB010DA0D23BC4B9A /* Pods-AppAuth-LinkedInLogin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppAuth-LinkedInLogin-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E012B70FBBD5E711D00E651CEE2AF36B /* OIDServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceConfiguration.h; path = Source/OIDServiceConfiguration.h; sourceTree = "<group>"; };
-		E3C4A0E2C5048C931FE32A4EC455C1E4 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
-		E9DC884E28B5B43FFBB44B847FF2FD75 /* AppAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.xcconfig; sourceTree = "<group>"; };
-		EB12B4BA7CC81DE10CADF9B79D259704 /* OIDAuthorizationUICoordinatorIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationUICoordinatorIOS.m; path = Source/iOS/OIDAuthorizationUICoordinatorIOS.m; sourceTree = "<group>"; };
-		F06F3C16205BB4038A90ED66AB5B719F /* OIDServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceDiscovery.h; path = Source/OIDServiceDiscovery.h; sourceTree = "<group>"; };
+		E36EFB90012FBB24E82E4755F3FADF55 /* OIDEndSessionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionResponse.h; path = Source/OIDEndSessionResponse.h; sourceTree = "<group>"; };
+		E54E8767A428E82DBF5BF089EBD35530 /* OIDEndSessionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionRequest.h; path = Source/OIDEndSessionRequest.h; sourceTree = "<group>"; };
+		E8CABD283B8C12B4B12C1474D8702922 /* OIDExternalUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgent.h; path = Source/OIDExternalUserAgent.h; sourceTree = "<group>"; };
+		EA63DE6AC308758CB57B24CE2EBFA48A /* OIDIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDIDToken.m; path = Source/OIDIDToken.m; sourceTree = "<group>"; };
+		EE4A5E098B3541EA6D0EEAB7B6F7037C /* OIDAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthState.m; path = Source/OIDAuthState.m; sourceTree = "<group>"; };
 		F2922E4A921E71C3289028694A885B76 /* Pods-AppAuth-LinkedInLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppAuth-LinkedInLogin.modulemap"; sourceTree = "<group>"; };
-		F3B7CBC4E79E8FE100390C7DD918240E /* OIDScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopeUtilities.m; path = Source/OIDScopeUtilities.m; sourceTree = "<group>"; };
-		F77FE958004B978F25EAECC0B5069BEC /* OIDRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationResponse.h; path = Source/OIDRegistrationResponse.h; sourceTree = "<group>"; };
+		F75A2F32B03D5B714BBCBE65B097DFD1 /* OIDTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenResponse.m; path = Source/OIDTokenResponse.m; sourceTree = "<group>"; };
 		F79D70BB9B2AE3F440497386FE6FBB35 /* Pods_AppAuth_LinkedInLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AppAuth_LinkedInLogin.framework; path = "Pods-AppAuth-LinkedInLogin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8D3430ED57BF13BEDFD15E7EECF4737 /* OIDTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenUtilities.h; path = Source/OIDTokenUtilities.h; sourceTree = "<group>"; };
+		F8FD56B869BCF9E4E6E30BD39B67CAFF /* OIDServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceConfiguration.m; path = Source/OIDServiceConfiguration.m; sourceTree = "<group>"; };
 		F95805CB7B2FFB1054FAC22ED847C356 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD704AB48F56904EA6EA7CA0907C14B /* AppAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-umbrella.h"; sourceTree = "<group>"; };
 		FCF62DAA0D42955D1B4F7F5DCE908DCD /* Pods-AppAuth-LinkedInLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppAuth-LinkedInLogin-umbrella.h"; sourceTree = "<group>"; };
+		FD557907283488435900ED676FD5C649 /* OIDAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationResponse.m; path = Source/OIDAuthorizationResponse.m; sourceTree = "<group>"; };
+		FE201AFDDCBFE6737113569D974FAD28 /* OIDExternalUserAgentRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentRequest.h; path = Source/OIDExternalUserAgentRequest.h; sourceTree = "<group>"; };
+		FEA8C16D20BEE1B7D6F4B54488A132BA /* AppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuth.h; path = Source/AppAuth.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,73 +187,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F252BA821C4D1F13ED4CF1B5873EDB5D /* Frameworks */ = {
+		F2FC8158B58B1D5A19E4AD92576F00C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D6CE8404767C7E5C7CA63822D36A51 /* Foundation.framework in Frameworks */,
-				E8CB6E6773A88BD425DB3F067BC1AB0A /* SafariServices.framework in Frameworks */,
+				5ED505FD1C70BD69999423CD62CE1E2F /* Foundation.framework in Frameworks */,
+				64B210E126671B28A850DA4F8FDD2A57 /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		002E62ADDD0BDFAAFD30E7D34155E830 /* AppAuth */ = {
+		09A1CFFC3CB487E00A1E3175BC2A6410 /* AppAuth */ = {
 			isa = PBXGroup;
 			children = (
-				650C019BD7182F6B0DEDE5318572090A /* AppAuth.h */,
-				415AAA87D4BAA9A62E2FEEFEF33BEB52 /* OIDAuthorizationRequest.h */,
-				843C4006150EF35E39AA3C02453AB579 /* OIDAuthorizationRequest.m */,
-				70F5F093F6415B47872FB92E4EDF00C9 /* OIDAuthorizationResponse.h */,
-				952F971F1851AB479965D726A8627F2D /* OIDAuthorizationResponse.m */,
-				6CB19AC840DE531B3520E955E3211E5E /* OIDAuthorizationService.h */,
-				8794FA04C73B59CDD2C1CFEFE0AD18A0 /* OIDAuthorizationService.m */,
-				3872A1508396D8D2F34566F67495C8DA /* OIDAuthorizationService+IOS.h */,
-				492D1A455C957C3E96C5209E7C628FF5 /* OIDAuthorizationService+IOS.m */,
-				5F7BD48672B64155F695637FA085146F /* OIDAuthorizationUICoordinator.h */,
-				125314E4AA781C8517886BC80A489BAB /* OIDAuthorizationUICoordinatorIOS.h */,
-				EB12B4BA7CC81DE10CADF9B79D259704 /* OIDAuthorizationUICoordinatorIOS.m */,
-				9D6733CB4977A8A4B365A785E68FC733 /* OIDAuthState.h */,
-				0CA15D878079581DCC56B0F1DF7C997E /* OIDAuthState.m */,
-				798CDBBFC8F4715DDF47BB16460583A0 /* OIDAuthState+IOS.h */,
-				32076BD464EFBC3E0EF74FE19FD9D10A /* OIDAuthState+IOS.m */,
-				E3C4A0E2C5048C931FE32A4EC455C1E4 /* OIDAuthStateChangeDelegate.h */,
-				50E1F524165E632FE4C056929FD43212 /* OIDAuthStateErrorDelegate.h */,
-				7A279BAB78B2199C02A7E960C4606E93 /* OIDClientMetadataParameters.h */,
-				DD86C97F296DABFB7B82568B897464B7 /* OIDClientMetadataParameters.m */,
-				167EC616AE98586C19B1633D8588B04D /* OIDDefines.h */,
-				16DFCC18A080FF1BDD6EFB6829507089 /* OIDError.h */,
-				46CA5972134D04B93897A8CC621FDCCE /* OIDError.m */,
-				9B1FEFCFF93738628374B264731C8728 /* OIDErrorUtilities.h */,
-				07FDE166CA0FC993A277A62DEBDFA2AB /* OIDErrorUtilities.m */,
-				438DD823E3E55FB62AB997079375D91F /* OIDFieldMapping.h */,
-				937F07ADD5074DE356CADBF071CB4548 /* OIDFieldMapping.m */,
-				3775023EF130A055B624F8656A82B895 /* OIDGrantTypes.h */,
-				017CDF2F0081EA89851ED265DF4B64B4 /* OIDGrantTypes.m */,
-				BD607B6C3589D71CCD7A9F0DB6B3347A /* OIDRegistrationRequest.h */,
-				A13AE32E9366C0FD99B3BC098CE2183B /* OIDRegistrationRequest.m */,
-				F77FE958004B978F25EAECC0B5069BEC /* OIDRegistrationResponse.h */,
-				493DAC0B03D6A43E0CE99B0BFD8C47BB /* OIDRegistrationResponse.m */,
-				CAF4765D26772969BED2536566A9B5CC /* OIDResponseTypes.h */,
-				8DB3A23142116FECF85C9A5F66918215 /* OIDResponseTypes.m */,
-				D664FBCB528A4A9351C2425BBB438E88 /* OIDScopes.h */,
-				D56C55B08B97228891B378A834B1BA9A /* OIDScopes.m */,
-				3A98CC55F6046F6B936FD881C18DB1E6 /* OIDScopeUtilities.h */,
-				F3B7CBC4E79E8FE100390C7DD918240E /* OIDScopeUtilities.m */,
-				E012B70FBBD5E711D00E651CEE2AF36B /* OIDServiceConfiguration.h */,
-				BDC3742A838C13443CF628F9F756E00B /* OIDServiceConfiguration.m */,
-				F06F3C16205BB4038A90ED66AB5B719F /* OIDServiceDiscovery.h */,
-				38BCA3757FDD5AB2A42D56BB94389BAA /* OIDServiceDiscovery.m */,
-				146D4FDC72AC23A4D8C27C3561BC1389 /* OIDTokenRequest.h */,
-				B325CCD4FC8C31258998BEDD13F7D488 /* OIDTokenRequest.m */,
-				B65D55898909A3561704F964B73CE0B9 /* OIDTokenResponse.h */,
-				C2B05D778506983F1D4266EF86516AC9 /* OIDTokenResponse.m */,
-				F8D3430ED57BF13BEDFD15E7EECF4737 /* OIDTokenUtilities.h */,
-				00564411F7AE532C9028A5CE4A6D5220 /* OIDTokenUtilities.m */,
-				62ACDBB14C9FF3CB677ABD8A148B97FB /* OIDURLQueryComponent.h */,
-				6823C9382E0A09B56C5908C8F70E9700 /* OIDURLQueryComponent.m */,
-				664A5B0C2DAA6F74D0548F9FC6606D32 /* Support Files */,
+				660E47B73287F71E68D0E21CE45AB95D /* Core */,
+				FB2BBDED432D1B9509356E1E9F206D5C /* ExternalUserAgent */,
+				27ED8916EC43475A37E8E27D3A07ABAC /* Support Files */,
 			);
 			name = AppAuth;
 			path = AppAuth;
@@ -241,6 +218,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		27ED8916EC43475A37E8E27D3A07ABAC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6579F38BCE8077EB234928BCD85EDC51 /* AppAuth.modulemap */,
+				1A226182DEE0FCF35B4669F3D1CD8AF5 /* AppAuth.xcconfig */,
+				192E18C833C31BA2FCAE436748042B53 /* AppAuth-dummy.m */,
+				982C2C5DDD5B26D2881642F78423E4B6 /* AppAuth-prefix.pch */,
+				FAD704AB48F56904EA6EA7CA0907C14B /* AppAuth-umbrella.h */,
+				261E614C4F7DE4915D773375B6F22796 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppAuth";
+			sourceTree = "<group>";
+		};
 		580AC2A11ABE481CAE2A76BED93D1E67 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,26 +241,74 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		587D4D90707649FDFDDEFA27FC36DDC6 /* Pods */ = {
+		5B16F2E290267706160CE602FAE8A0BD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				002E62ADDD0BDFAAFD30E7D34155E830 /* AppAuth */,
+				09A1CFFC3CB487E00A1E3175BC2A6410 /* AppAuth */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		664A5B0C2DAA6F74D0548F9FC6606D32 /* Support Files */ = {
+		660E47B73287F71E68D0E21CE45AB95D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D7C60E5F2467CD1843DD5948057FDC79 /* AppAuth.modulemap */,
-				E9DC884E28B5B43FFBB44B847FF2FD75 /* AppAuth.xcconfig */,
-				BA90374D4385BEFBC6D32591D6D40E1C /* AppAuth-dummy.m */,
-				D28C29485581AAABF3E2E9E24EBD15C0 /* AppAuth-prefix.pch */,
-				393C478676482D55600BA91FC8F0B0D3 /* AppAuth-umbrella.h */,
-				4427A661BB3025535ABE0167A3328BE4 /* Info.plist */,
+				3742496E895AFFF8545128973829F013 /* AppAuthCore.h */,
+				143CF85DFC82FE9FFF228B39F92383AA /* OIDAuthorizationRequest.h */,
+				6830FCE2ED791AA7B6EA8F097FEF5DDC /* OIDAuthorizationRequest.m */,
+				79FB4065CEB4575207CBB1D712346C6A /* OIDAuthorizationResponse.h */,
+				FD557907283488435900ED676FD5C649 /* OIDAuthorizationResponse.m */,
+				9D3EEC1A5FF66A9FDAB0DB85050B21D4 /* OIDAuthorizationService.h */,
+				6D49981EA1DAAD93D5218531B1DF95AC /* OIDAuthorizationService.m */,
+				2AE0300FDA9E45296A6FD88C271E267C /* OIDAuthState.h */,
+				EE4A5E098B3541EA6D0EEAB7B6F7037C /* OIDAuthState.m */,
+				4BCD0DD773269AEFBEAF901FD245DB2E /* OIDAuthStateChangeDelegate.h */,
+				8BCB582152699054038401F122A9C08D /* OIDAuthStateErrorDelegate.h */,
+				0FF945C0947E0BDA7311F760E86FFA60 /* OIDClientMetadataParameters.h */,
+				3D07E893A57E094E78CCDA60AB2E69DA /* OIDClientMetadataParameters.m */,
+				1664F4429F5BA151784CCEF46FB3993B /* OIDDefines.h */,
+				E54E8767A428E82DBF5BF089EBD35530 /* OIDEndSessionRequest.h */,
+				D4755195091959144CBEAB7CBA04FC7C /* OIDEndSessionRequest.m */,
+				E36EFB90012FBB24E82E4755F3FADF55 /* OIDEndSessionResponse.h */,
+				22D8EFF8C03E2333700A4B68A1695364 /* OIDEndSessionResponse.m */,
+				3D0E51A0E5280A1354F591BCDD72BE24 /* OIDError.h */,
+				CB6A6C6187F34402336998AAD09F5C99 /* OIDError.m */,
+				81A4AAF94A4F42364A30DDE80E53495F /* OIDErrorUtilities.h */,
+				077FF71987396284606A993484BBDC1C /* OIDErrorUtilities.m */,
+				E8CABD283B8C12B4B12C1474D8702922 /* OIDExternalUserAgent.h */,
+				FE201AFDDCBFE6737113569D974FAD28 /* OIDExternalUserAgentRequest.h */,
+				69670F01462FE5A637ACE0E28CB1CCD2 /* OIDExternalUserAgentSession.h */,
+				66929E2BC03F513C2BB80D897A367969 /* OIDFieldMapping.h */,
+				38241AA6BF0EADA258EB4ECFD63CD721 /* OIDFieldMapping.m */,
+				0E07D5E22B0ED049775913D81D72FE1A /* OIDGrantTypes.h */,
+				AAA5E39E5201BAAC822B3B3B1899C600 /* OIDGrantTypes.m */,
+				63B7C4F5EE853E4D68B2EBC8D1199386 /* OIDIDToken.h */,
+				EA63DE6AC308758CB57B24CE2EBFA48A /* OIDIDToken.m */,
+				378644FB55A6A1F773B7BC5886C7ED62 /* OIDRegistrationRequest.h */,
+				97833D7B535C3FE2422216461DEF8469 /* OIDRegistrationRequest.m */,
+				7C5E9CFDCCE7CCFB5A48CAE9B43050D4 /* OIDRegistrationResponse.h */,
+				7F0C04A76A110E706288379CA99AD1A5 /* OIDRegistrationResponse.m */,
+				4485603BEC4CF462B321CCF58768C361 /* OIDResponseTypes.h */,
+				D39D0E8F79DBC85D20596E285209797D /* OIDResponseTypes.m */,
+				6BD64C1255041485979A19456475BC54 /* OIDScopes.h */,
+				2C8E3290200F0B69CB2958BE1754D596 /* OIDScopes.m */,
+				C57B4F31054C8083CFA2B14A7A422BF2 /* OIDScopeUtilities.h */,
+				0E8BF9CFFFCA3B07415DC0F8DA03B324 /* OIDScopeUtilities.m */,
+				12051F6F54676415E83D23ED6B845C5E /* OIDServiceConfiguration.h */,
+				F8FD56B869BCF9E4E6E30BD39B67CAFF /* OIDServiceConfiguration.m */,
+				175C900194A59E959D48E6F4E4F50616 /* OIDServiceDiscovery.h */,
+				B89ECEDAABC19A6C96292495E6E65B2E /* OIDServiceDiscovery.m */,
+				02E30F9373C0C16FC47D22A365C89552 /* OIDTokenRequest.h */,
+				97F6157903105B4B644366322F0100F0 /* OIDTokenRequest.m */,
+				9DD2C271B947844FED80C2AB9C580B7A /* OIDTokenResponse.h */,
+				F75A2F32B03D5B714BBCBE65B097DFD1 /* OIDTokenResponse.m */,
+				9CDE1566987DD6FA36AEBEB317748189 /* OIDTokenUtilities.h */,
+				24141791666634344EABD343C3574867 /* OIDTokenUtilities.m */,
+				A681505DE06C2AFF4D50B311140BBA8A /* OIDURLQueryComponent.h */,
+				32A23EF28235302061678ED1BEBCEC20 /* OIDURLQueryComponent.m */,
+				85439FF27E8AFC26911990385D1B162B /* OIDURLSessionProvider.h */,
+				6ED83967D5CDA49B4FD67469A6E375BD /* OIDURLSessionProvider.m */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AppAuth";
+			name = Core;
 			sourceTree = "<group>";
 		};
 		891F5A9988FBEFB6F668C1589D85C80C /* Targets Support Files */ = {
@@ -303,10 +342,26 @@
 			children = (
 				24390EFD555DD124430DFF9724065945 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				587D4D90707649FDFDDEFA27FC36DDC6 /* Pods */,
+				5B16F2E290267706160CE602FAE8A0BD /* Pods */,
 				FEE92063964DAE07FC9DE412F9845A9C /* Products */,
 				891F5A9988FBEFB6F668C1589D85C80C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		FB2BBDED432D1B9509356E1E9F206D5C /* ExternalUserAgent */ = {
+			isa = PBXGroup;
+			children = (
+				FEA8C16D20BEE1B7D6F4B54488A132BA /* AppAuth.h */,
+				B9EC132C9A61423BFE948453568F64DE /* OIDAuthorizationService+IOS.h */,
+				8AF5D948CB0C948CB3757C44EC2F84D3 /* OIDAuthorizationService+IOS.m */,
+				093C139CF9CA54237E7B07DC987C689B /* OIDAuthState+IOS.h */,
+				2A351D9E6F5B8120080DFF6195EFFA83 /* OIDAuthState+IOS.m */,
+				CCD629EA723F595CC1956D246AE06259 /* OIDExternalUserAgentIOS.h */,
+				6710EB1EBA32A1497A40FE88E3297CAB /* OIDExternalUserAgentIOS.m */,
+				192FBA164C891D1C220DC8B54A35D027 /* OIDExternalUserAgentIOSCustomBrowser.h */,
+				4D1DD9EFB5D0A09A51A386ED6733C530 /* OIDExternalUserAgentIOSCustomBrowser.m */,
+			);
+			name = ExternalUserAgent;
 			sourceTree = "<group>";
 		};
 		FEE92063964DAE07FC9DE412F9845A9C /* Products */ = {
@@ -321,6 +376,50 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2D5AE3C20F7C4DBAABB16FE9BFA55E84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E135206AA44E77AB09B36EB19D7FAD9 /* AppAuth-umbrella.h in Headers */,
+				8AF289C891632EFE44E5D40972303FAF /* AppAuth.h in Headers */,
+				E08259975E0082C14EEC0166475180EC /* AppAuthCore.h in Headers */,
+				F723A4D0B2DB10FA3B380F9389B207E6 /* OIDAuthorizationRequest.h in Headers */,
+				2C346D573DE98C091AD7A9CC8FFB028D /* OIDAuthorizationResponse.h in Headers */,
+				D97315F36B153B562BB4AC9647D3C7D0 /* OIDAuthorizationService+IOS.h in Headers */,
+				C97C1EF94964A7C546FC79FC52D70F54 /* OIDAuthorizationService.h in Headers */,
+				A76EDEC6D4D5485A2A1CCAC1C9D58A51 /* OIDAuthState+IOS.h in Headers */,
+				87B0CADD1F0ECB9BD2E6762E5C739113 /* OIDAuthState.h in Headers */,
+				6FB6A62E1116098825F98D1F11267488 /* OIDAuthStateChangeDelegate.h in Headers */,
+				2C819FFCFEA8DF6DF64B1CEC39D78447 /* OIDAuthStateErrorDelegate.h in Headers */,
+				FC5026A2B5B44C4238DC6CAE6FB5EB84 /* OIDClientMetadataParameters.h in Headers */,
+				AF854D8F01C4E8ABAF6DC97266B65C24 /* OIDDefines.h in Headers */,
+				BD7223FF2510B006EBB1B93D2207A413 /* OIDEndSessionRequest.h in Headers */,
+				683BA3B3DCBF3435502F0947E87807FD /* OIDEndSessionResponse.h in Headers */,
+				CFCBBF114C163DAEE4EE4836F8E2B486 /* OIDError.h in Headers */,
+				196EE5290BC2B1807F04DF318AC6FDEC /* OIDErrorUtilities.h in Headers */,
+				888CD852FF2095A51FBB186ABAA0C077 /* OIDExternalUserAgent.h in Headers */,
+				1D1EED44A6E77889CBDB8C66742A0E44 /* OIDExternalUserAgentIOS.h in Headers */,
+				D6D1C5DB4551490D009DEB6610B93267 /* OIDExternalUserAgentIOSCustomBrowser.h in Headers */,
+				1F435EDC2B92E77B8B27DFDBA48BC32C /* OIDExternalUserAgentRequest.h in Headers */,
+				DE7A32720880357709409C28B69A0809 /* OIDExternalUserAgentSession.h in Headers */,
+				3F8ABA2C3F8A3D693C7BF2FB001DD803 /* OIDFieldMapping.h in Headers */,
+				12BC24B4A0643E3F3D52B859E49B9224 /* OIDGrantTypes.h in Headers */,
+				5BA17909CAC54D4E72F22A8E587CF212 /* OIDIDToken.h in Headers */,
+				D6119ECDDD86097CD4BBF7C222A48D6E /* OIDRegistrationRequest.h in Headers */,
+				A76F3B43680DA68515A1A5EB1FFFE89E /* OIDRegistrationResponse.h in Headers */,
+				1002DFE50DC5EB22FD751A79CF2ED4D1 /* OIDResponseTypes.h in Headers */,
+				55DFE67EFF789A1C677A5E59A1683A79 /* OIDScopes.h in Headers */,
+				E5C5AAE3B048AD0A4D043B6A49E86A54 /* OIDScopeUtilities.h in Headers */,
+				46F81DA2CCF16E4F1A6C8DC05C359E50 /* OIDServiceConfiguration.h in Headers */,
+				8F26AEDCF18A0BDC1E84418EB59991B9 /* OIDServiceDiscovery.h in Headers */,
+				83930DD31A581842587C96A1C0676E7C /* OIDTokenRequest.h in Headers */,
+				EDCD3213B10DAA43DD513370B93B50BB /* OIDTokenResponse.h in Headers */,
+				61396B09D9E25AC9EB3052B15252A8F4 /* OIDTokenUtilities.h in Headers */,
+				631F899648B002EA203B24B08F436161 /* OIDURLQueryComponent.h in Headers */,
+				9CDB50C34FB5FB44A85706DC92C61821 /* OIDURLSessionProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36D4811875CEEE9520F1D63B97124D93 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,45 +428,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60C76B99CE7A165508B142C82EA93EB8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				075FF174C817DCA7B5AA5EFC866157D0 /* AppAuth-umbrella.h in Headers */,
-				56ED0234B497124A09697C6C6920FA90 /* AppAuth.h in Headers */,
-				CF60C07E2CE4E767582889115F4F035A /* OIDAuthorizationRequest.h in Headers */,
-				329336C8BA7E423B343366BF7A98A88F /* OIDAuthorizationResponse.h in Headers */,
-				6A011072616F78B596C3FB1CB0B64AC8 /* OIDAuthorizationService+IOS.h in Headers */,
-				BC2F30C67E7512FA6CFD98027CA01A06 /* OIDAuthorizationService.h in Headers */,
-				2ED7B39C1EC5B1590A77AF2DE4AE51F1 /* OIDAuthorizationUICoordinator.h in Headers */,
-				12ABCC761802170D1AB0D87290886CCC /* OIDAuthorizationUICoordinatorIOS.h in Headers */,
-				D90217B1368973B7245B7C1053004285 /* OIDAuthState+IOS.h in Headers */,
-				FB1B17D36BA23BE45EEB85C5050DF9D3 /* OIDAuthState.h in Headers */,
-				03924A4FC510B502EFD0C3F067D96551 /* OIDAuthStateChangeDelegate.h in Headers */,
-				5EF919AB270AFEF8D4BACB35BA1D8574 /* OIDAuthStateErrorDelegate.h in Headers */,
-				A0A4546E7195821889EF02272FE4DEE1 /* OIDClientMetadataParameters.h in Headers */,
-				DE5CD7808B19410460D99DAA016E8AC1 /* OIDDefines.h in Headers */,
-				C2ADC6C7E61264700CBA1267EFDBBAA6 /* OIDError.h in Headers */,
-				1C88CAD4858806E2A5F7EF48B62A408F /* OIDErrorUtilities.h in Headers */,
-				A4B099DDDC47AD6A9FF453FE266F5C0E /* OIDFieldMapping.h in Headers */,
-				564C76AA12BA270CE77EED9B43813513 /* OIDGrantTypes.h in Headers */,
-				27977056664359A7DA9223BBA7908C35 /* OIDRegistrationRequest.h in Headers */,
-				B0EB84EAF560AACAB6A2A69DC7244C1E /* OIDRegistrationResponse.h in Headers */,
-				6DABBD2BE8B9D2B6032CC4E140D64E30 /* OIDResponseTypes.h in Headers */,
-				DEC7F17AED9B58479A6A4CA0E9AC3B10 /* OIDScopes.h in Headers */,
-				26BEAB6735CF8D74890E2FD5266683CD /* OIDScopeUtilities.h in Headers */,
-				FD36F0310ADF80F0089F96C4BEBBFA09 /* OIDServiceConfiguration.h in Headers */,
-				432A6E356357655E91AD4D66FA8A2C9E /* OIDServiceDiscovery.h in Headers */,
-				D11CE0965287B77DC48DA8C8DE77AD3B /* OIDTokenRequest.h in Headers */,
-				0969B1429C5897DA996C2275A3223B43 /* OIDTokenResponse.h in Headers */,
-				6BA82925410DC9E082BAAC7C834B4A22 /* OIDTokenUtilities.h in Headers */,
-				B3BE734086F20D8A57A72CDB5C98746A /* OIDURLQueryComponent.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0F1FA08409E1DEAC5B4C96178C9C0F8C /* AppAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32299C4D6274BAF54FE4C4F2F9C51D1E /* Build configuration list for PBXNativeTarget "AppAuth" */;
+			buildPhases = (
+				2D5AE3C20F7C4DBAABB16FE9BFA55E84 /* Headers */,
+				13E084F6C07A45B5CC6D565102F6800C /* Sources */,
+				F2FC8158B58B1D5A19E4AD92576F00C0 /* Frameworks */,
+				1CF89CCCBC2D4E6CA6C8F53796F6BF53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppAuth;
+			productName = AppAuth;
+			productReference = CD69CA81765AFC8237BBCFA4722C0104 /* AppAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		665A63FABFC62E37FE3F64EB0AB5E8E2 /* Pods-AppAuth-LinkedInLogin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B76E8065935B51D14E02E1CFF907CD8C /* Build configuration list for PBXNativeTarget "Pods-AppAuth-LinkedInLogin" */;
@@ -385,24 +466,6 @@
 			name = "Pods-AppAuth-LinkedInLogin";
 			productName = "Pods-AppAuth-LinkedInLogin";
 			productReference = F79D70BB9B2AE3F440497386FE6FBB35 /* Pods_AppAuth_LinkedInLogin.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7503829C3B04BBAE1481AE1EAC80458E /* AppAuth */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D48CA23A2A54B117353DD1338B72F51E /* Build configuration list for PBXNativeTarget "AppAuth" */;
-			buildPhases = (
-				60C76B99CE7A165508B142C82EA93EB8 /* Headers */,
-				B42B83C90CB29AF06AD582FE9FFC1334 /* Sources */,
-				F252BA821C4D1F13ED4CF1B5873EDB5D /* Frameworks */,
-				AFDEEAC2448104C36E27C560E645B61D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AppAuth;
-			productName = AppAuth;
-			productReference = CD69CA81765AFC8237BBCFA4722C0104 /* AppAuth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -426,14 +489,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7503829C3B04BBAE1481AE1EAC80458E /* AppAuth */,
+				0F1FA08409E1DEAC5B4C96178C9C0F8C /* AppAuth */,
 				665A63FABFC62E37FE3F64EB0AB5E8E2 /* Pods-AppAuth-LinkedInLogin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AFDEEAC2448104C36E27C560E645B61D /* Resources */ = {
+		1CF89CCCBC2D4E6CA6C8F53796F6BF53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,42 +513,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		13E084F6C07A45B5CC6D565102F6800C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA07E7F32E863A5F2D6BED8720FCF60 /* AppAuth-dummy.m in Sources */,
+				4467558A7C5599714EB0760DB09537E3 /* OIDAuthorizationRequest.m in Sources */,
+				C4B68BAE984AE1F5CF5D4B58CCD5E270 /* OIDAuthorizationResponse.m in Sources */,
+				F33D75E9552705EBCFEF5F880F29CE70 /* OIDAuthorizationService+IOS.m in Sources */,
+				0C2C830BD90087BE7A01907738CE65F9 /* OIDAuthorizationService.m in Sources */,
+				9DDEDBF7F08C54AC7D9EF45FC797276F /* OIDAuthState+IOS.m in Sources */,
+				01C2E23A3D4116F2EB3F12A68D4120A7 /* OIDAuthState.m in Sources */,
+				8246351974B0B8B64D32D37086E4F7B9 /* OIDClientMetadataParameters.m in Sources */,
+				C55AC3D36BE9C3EF442825FD90256B31 /* OIDEndSessionRequest.m in Sources */,
+				5F10849846B08D5D58249FFB0B459569 /* OIDEndSessionResponse.m in Sources */,
+				916FC39D2F1F85BCAF4111CE25768E5B /* OIDError.m in Sources */,
+				6E156A8610E63679373373C00E1801C1 /* OIDErrorUtilities.m in Sources */,
+				9E14F8E42F637645423E716CE82B751C /* OIDExternalUserAgentIOS.m in Sources */,
+				691D32D5073F49FA89C31D57BC8BDDB6 /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */,
+				945DD39C25F48C62885FA19F882AF52C /* OIDFieldMapping.m in Sources */,
+				10DD5C6A886FD74DF3423DE216150D6B /* OIDGrantTypes.m in Sources */,
+				9590A1C50BDBA6CB63766158C5924F05 /* OIDIDToken.m in Sources */,
+				E78DB212800161EDC38CD7C4C685C105 /* OIDRegistrationRequest.m in Sources */,
+				B17C8B73B9D322B10D6587417D6EC9A0 /* OIDRegistrationResponse.m in Sources */,
+				0152839543ABB9C1D8B2C4DE2FDA80DF /* OIDResponseTypes.m in Sources */,
+				11B05DC9B74EB6DB583187377F400E76 /* OIDScopes.m in Sources */,
+				12EB7D60DA915D42883F23C8D557D94D /* OIDScopeUtilities.m in Sources */,
+				A392470D6AE1EB69F8F5BE0B7407F81F /* OIDServiceConfiguration.m in Sources */,
+				5CF58556EBA59BAD43CF20579444A678 /* OIDServiceDiscovery.m in Sources */,
+				0625798C1D4F087FBCBFEA94D67A2C41 /* OIDTokenRequest.m in Sources */,
+				95616B903DEE69B473FA053C24AFB50C /* OIDTokenResponse.m in Sources */,
+				61AE5592078C9D5478F4235E29DC47EB /* OIDTokenUtilities.m in Sources */,
+				FB28B2A78D7BF7CAC5E3E262A7426D2F /* OIDURLQueryComponent.m in Sources */,
+				5017BADE0EA73EB4DB278CD6E49610C5 /* OIDURLSessionProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76F716369E4164434CF9474FA2E33930 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EAB0250D209C3DE9A578689CFCC00FAA /* Pods-AppAuth-LinkedInLogin-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B42B83C90CB29AF06AD582FE9FFC1334 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DCAB177625C0E859C97A066412BFF0E /* AppAuth-dummy.m in Sources */,
-				6CB66D4E08BA69DC38B3C889189B7FE6 /* OIDAuthorizationRequest.m in Sources */,
-				FB9FADF1D6B11BAC8CACB0457071F75C /* OIDAuthorizationResponse.m in Sources */,
-				DE7B1C9FE074707110F7C88088CABF65 /* OIDAuthorizationService+IOS.m in Sources */,
-				3942A46AE6F4D7716B18F9A520221B01 /* OIDAuthorizationService.m in Sources */,
-				95CC4E7F7EA6D10D8C24DF5F697A3384 /* OIDAuthorizationUICoordinatorIOS.m in Sources */,
-				FD02270749C7312926D7326ED3814128 /* OIDAuthState+IOS.m in Sources */,
-				EA5AE10250FB5EF32F768B536F8AA976 /* OIDAuthState.m in Sources */,
-				F89FD5EB56774AF5406AE939630A165B /* OIDClientMetadataParameters.m in Sources */,
-				AF7E431EB9E497E7DC6E026D1349B77B /* OIDError.m in Sources */,
-				82C2D46E38F43E852B35F22751ED4507 /* OIDErrorUtilities.m in Sources */,
-				DBE3964B78FD7E41EDD1244B499888CF /* OIDFieldMapping.m in Sources */,
-				44047BBF675B442741514E4AAA0F2E9D /* OIDGrantTypes.m in Sources */,
-				AA38C623F13DF1A42752D14301BD839A /* OIDRegistrationRequest.m in Sources */,
-				64C90FC5198249B84FE1A23F7489ED20 /* OIDRegistrationResponse.m in Sources */,
-				13CD8EEE054C5A7FD5CF03005EAABA95 /* OIDResponseTypes.m in Sources */,
-				C51CDEEF4241F44FA5AFB6FDCBCEB1AC /* OIDScopes.m in Sources */,
-				FAC1E98B69F83BB9427FA1BA0677599E /* OIDScopeUtilities.m in Sources */,
-				8434E4F290BC2EC0211B115F16DEB7A1 /* OIDServiceConfiguration.m in Sources */,
-				2EB540CD6BA3AB71B7034983233DA8AF /* OIDServiceDiscovery.m in Sources */,
-				DD75BD3B09E655BE555CE741655A8218 /* OIDTokenRequest.m in Sources */,
-				7DC7726D7BE0CCA2FAFA75D66B00EDB4 /* OIDTokenResponse.m in Sources */,
-				C5FF293780CC35B2F540148DDB549E73 /* OIDTokenUtilities.m in Sources */,
-				26B5B28B0B0A28296B9C5F505ABDA6E2 /* OIDURLQueryComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +563,7 @@
 		7C56BA38B1B2303E9B7ECA60A6552A27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppAuth;
-			target = 7503829C3B04BBAE1481AE1EAC80458E /* AppAuth */;
+			target = 0F1FA08409E1DEAC5B4C96178C9C0F8C /* AppAuth */;
 			targetProxy = 79022E61978D9B955F522BA2A3A90EB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -567,6 +635,41 @@
 			};
 			name = Debug;
 		};
+		2375688866CABBD038F3B6317AB44897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A226182DEE0FCF35B4669F3D1CD8AF5 /* AppAuth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppAuth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AppAuth/AppAuth.modulemap";
+				PRODUCT_MODULE_NAME = AppAuth;
+				PRODUCT_NAME = AppAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		36BD501D3366D82466B786C85AB9BD52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C57DB492E16F070B2EB6324596FEC8FC /* Pods-AppAuth-LinkedInLogin.debug.xcconfig */;
@@ -604,6 +707,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		3FF659963D3EFB6E735C8F10FE92DE81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A226182DEE0FCF35B4669F3D1CD8AF5 /* AppAuth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppAuth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AppAuth/AppAuth.modulemap";
+				PRODUCT_MODULE_NAME = AppAuth;
+				PRODUCT_NAME = AppAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		462B0D08440DEE5D72339CD821F9499E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -643,77 +782,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		7F07957DD801B1FF7869669A0FE1458D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DC884E28B5B43FFBB44B847FF2FD75 /* AppAuth.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AppAuth/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AppAuth/AppAuth.modulemap";
-				PRODUCT_MODULE_NAME = AppAuth;
-				PRODUCT_NAME = AppAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C5A9378CAEB662C26F650F4AB31CA7B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DC884E28B5B43FFBB44B847FF2FD75 /* AppAuth.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AppAuth/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AppAuth/AppAuth.modulemap";
-				PRODUCT_MODULE_NAME = AppAuth;
-				PRODUCT_NAME = AppAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		FD55312E52BD06A2B74503BB1310610F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -780,6 +848,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		32299C4D6274BAF54FE4C4F2F9C51D1E /* Build configuration list for PBXNativeTarget "AppAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2375688866CABBD038F3B6317AB44897 /* Debug */,
+				3FF659963D3EFB6E735C8F10FE92DE81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -794,15 +871,6 @@
 			buildConfigurations = (
 				36BD501D3366D82466B786C85AB9BD52 /* Debug */,
 				462B0D08440DEE5D72339CD821F9499E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D48CA23A2A54B117353DD1338B72F51E /* Build configuration list for PBXNativeTarget "AppAuth" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5A9378CAEB662C26F650F4AB31CA7B0 /* Debug */,
-				7F07957DD801B1FF7869669A0FE1458D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

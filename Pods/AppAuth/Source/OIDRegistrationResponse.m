@@ -22,6 +22,7 @@
 #import "OIDDefines.h"
 #import "OIDFieldMapping.h"
 #import "OIDRegistrationRequest.h"
+#import "OIDTokenUtilities.h"
 
 NSString *const OIDClientIDParam = @"client_id";
 NSString *const OIDClientIDIssuedAtParam = @"client_id_issued_at";
@@ -39,16 +40,6 @@ static NSString *const kRequestKey = @"request";
 static NSString *const kAdditionalParametersKey = @"additionalParameters";
 
 @implementation OIDRegistrationResponse
-
-@synthesize request = _request;
-@synthesize clientID = _clientID;
-@synthesize clientIDIssuedAt = _clientIDIssuedAt;
-@synthesize clientSecret = _clientSecret;
-@synthesize clientSecretExpiresAt = _clientSecretExpiresAt;
-@synthesize registrationAccessToken = _registrationAccessToken;
-@synthesize registrationClientURI = _registrationClientURI;
-@synthesize tokenEndpointAuthenticationMethod = _tokenEndpointAuthenticationMethod;
-@synthesize additionalParameters = _additionalParameters;
 
 /*! @brief Returns a mapping of incoming parameters to instance variables.
     @return A mapping of incoming parameters to instance variables.
@@ -89,7 +80,7 @@ static NSString *const kAdditionalParametersKey = @"additionalParameters";
 #pragma mark - Initializers
 
 - (nonnull instancetype)init
-  OID_UNAVAILABLE_USE_INITIALIZER(@selector(initWithRequest:parameters:));
+  OID_UNAVAILABLE_USE_INITIALIZER(@selector(initWithRequest:parameters:))
 
 - (instancetype)initWithRequest:(OIDRegistrationRequest *)request
                               parameters:(NSDictionary<NSString *, NSObject <NSCopying> *> *)parameters {
@@ -159,12 +150,12 @@ static NSString *const kAdditionalParametersKey = @"additionalParameters";
           "registrationClientURI: \"%@\", "
           "additionalParameters: %@, request: %@>",
           NSStringFromClass([self class]),
-          self,
+          (void *)self,
           _clientID,
           _clientIDIssuedAt,
-          _clientSecret,
+          [OIDTokenUtilities redact:_clientSecret],
           _clientSecretExpiresAt,
-          _registrationAccessToken,
+          [OIDTokenUtilities redact:_registrationAccessToken],
           _registrationClientURI,
           _additionalParameters,
           _request];

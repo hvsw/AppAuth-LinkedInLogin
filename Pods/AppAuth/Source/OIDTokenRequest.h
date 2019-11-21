@@ -31,19 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
     @see https://tools.ietf.org/html/rfc6749#section-3.2
     @see https://tools.ietf.org/html/rfc6749#section-4.1.3
  */
-@interface OIDTokenRequest : NSObject <NSCopying, NSSecureCoding> {
-  // property variables
-  OIDServiceConfiguration *_configuration;
-  NSString *_grantType;
-  NSString *_authorizationCode;
-  NSURL *_redirectURL;
-  NSString *_clientID;
-  NSString *_clientSecret;
-  NSString *_scope;
-  NSString *_refreshToken;
-  NSString *_codeVerifier;
-  NSDictionary<NSString *, NSString *> *_additionalParameters;
-}
+@interface OIDTokenRequest : NSObject <NSCopying, NSSecureCoding>
 
 /*! @brief The service's configuration.
     @remarks This configuration specifies how to connect to a particular OAuth provider.
@@ -69,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
     @remarks redirect_uri
     @see https://tools.ietf.org/html/rfc6749#section-4.1.3
  */
-@property(nonatomic, readonly) NSURL *redirectURL;
+@property(nonatomic, readonly, nullable) NSURL *redirectURL;
 
 /*! @brief The client identifier.
     @remarks client_id
@@ -120,14 +108,16 @@ NS_ASSUME_NONNULL_BEGIN
     @param code The authorization code received from the authorization server.
     @param redirectURL The client's redirect URI.
     @param clientID The client identifier.
+    @param clientSecret The client secret.
     @param scopes An array of scopes to combine into a single scope string per the OAuth2 spec.
     @param refreshToken The refresh token.
+    @param codeVerifier The PKCE code verifier.
     @param additionalParameters The client's additional token request parameters.
  */
 - (instancetype)initWithConfiguration:(OIDServiceConfiguration *)configuration
                grantType:(NSString *)grantType
        authorizationCode:(nullable NSString *)code
-             redirectURL:(NSURL *)redirectURL
+             redirectURL:(nullable NSURL *)redirectURL
                 clientID:(NSString *)clientID
             clientSecret:(nullable NSString *)clientSecret
                   scopes:(nullable NSArray<NSString *> *)scopes
@@ -143,15 +133,17 @@ NS_ASSUME_NONNULL_BEGIN
     @param code The authorization code received from the authorization server.
     @param redirectURL The client's redirect URI.
     @param clientID The client identifier.
+    @param clientSecret The client secret.
     @param scope The value of the scope parameter is expressed as a list of space-delimited,
         case-sensitive strings.
     @param refreshToken The refresh token.
+    @param codeVerifier The PKCE code verifier.
     @param additionalParameters The client's additional token request parameters.
  */
 - (instancetype)initWithConfiguration:(OIDServiceConfiguration *)configuration
                grantType:(NSString *)grantType
        authorizationCode:(nullable NSString *)code
-             redirectURL:(NSURL *)redirectURL
+             redirectURL:(nullable NSURL *)redirectURL
                 clientID:(NSString *)clientID
             clientSecret:(nullable NSString *)clientSecret
                    scope:(nullable NSString *)scope

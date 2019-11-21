@@ -22,10 +22,13 @@
 #import "OIDAuthorizationRequest.h"
 #import "OIDAuthorizationResponse.h"
 #import "OIDAuthorizationService.h"
-#import "OIDAuthorizationUICoordinator.h"
 #import "OIDError.h"
 #import "OIDErrorUtilities.h"
+#import "OIDExternalUserAgent.h"
+#import "OIDExternalUserAgentRequest.h"
+#import "OIDExternalUserAgentSession.h"
 #import "OIDGrantTypes.h"
+#import "OIDIDToken.h"
 #import "OIDRegistrationRequest.h"
 #import "OIDRegistrationResponse.h"
 #import "OIDResponseTypes.h"
@@ -36,22 +39,25 @@
 #import "OIDTokenRequest.h"
 #import "OIDTokenResponse.h"
 #import "OIDTokenUtilities.h"
+#import "OIDURLSessionProvider.h"
+#import "OIDEndSessionRequest.h"
+#import "OIDEndSessionResponse.h"
 
 #if TARGET_OS_TV
 #elif TARGET_OS_WATCH
 #elif TARGET_OS_IOS
 #import "OIDAuthState+IOS.h"
 #import "OIDAuthorizationService+IOS.h"
-#import "OIDAuthorizationUICoordinatorIOS.h"
+#import "OIDExternalUserAgentIOS.h"
+#import "OIDExternalUserAgentIOSCustomBrowser.h"
 #elif TARGET_OS_MAC
 #import "OIDAuthState+Mac.h"
 #import "OIDAuthorizationService+Mac.h"
-#import "OIDAuthorizationUICoordinatorMac.h"
+#import "OIDExternalUserAgentMac.h"
 #import "OIDRedirectHTTPHandler.h"
 #else
 #error "Platform Undefined"
 #endif
-
 
 /*! @mainpage AppAuth for iOS and macOS
 

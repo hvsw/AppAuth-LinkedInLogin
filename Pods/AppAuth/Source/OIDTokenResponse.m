@@ -21,6 +21,7 @@
 #import "OIDDefines.h"
 #import "OIDFieldMapping.h"
 #import "OIDTokenRequest.h"
+#import "OIDTokenUtilities.h"
 
 /*! @brief Key used to encode the @c request property for @c NSSecureCoding
  */
@@ -60,15 +61,6 @@ static NSString *const kAdditionalParametersKey = @"additionalParameters";
 
 @implementation OIDTokenResponse
 
-@synthesize request = _request;
-@synthesize accessToken = _accessToken;
-@synthesize accessTokenExpirationDate = _accessTokenExpirationDate;
-@synthesize tokenType = _tokenType;
-@synthesize idToken = _idToken;
-@synthesize refreshToken = _refreshToken;
-@synthesize scope = _scope;
-@synthesize additionalParameters = _additionalParameters;
-
 /*! @brief Returns a mapping of incoming parameters to instance variables.
     @return A mapping of incoming parameters to instance variables.
  */
@@ -98,7 +90,7 @@ static NSString *const kAdditionalParametersKey = @"additionalParameters";
 #pragma mark - Initializers
 
 - (instancetype)init
-    OID_UNAVAILABLE_USE_INITIALIZER(@selector(initWithRequest:parameters:));
+    OID_UNAVAILABLE_USE_INITIALIZER(@selector(initWithRequest:parameters:))
 
 - (instancetype)initWithRequest:(OIDTokenRequest *)request
     parameters:(NSDictionary<NSString *, NSObject<NSCopying> *> *)parameters {
@@ -155,12 +147,12 @@ static NSString *const kAdditionalParametersKey = @"additionalParameters";
                                      "tokenType: %@, idToken: \"%@\", refreshToken: \"%@\", "
                                      "scope: \"%@\", additionalParameters: %@, request: %@>",
                                     NSStringFromClass([self class]),
-                                    self,
-                                    _accessToken,
+                                    (void *)self,
+                                    [OIDTokenUtilities redact:_accessToken],
                                     _accessTokenExpirationDate,
                                     _tokenType,
-                                    _idToken,
-                                    _refreshToken,
+                                    [OIDTokenUtilities redact:_idToken],
+                                    [OIDTokenUtilities redact:_refreshToken],
                                     _scope,
                                     _additionalParameters,
                                     _request];

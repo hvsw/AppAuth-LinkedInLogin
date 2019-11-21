@@ -14,8 +14,7 @@
 +(void)swizzle {
     Method original, swizzle;
     
-    original = class_getInstanceMethod(NSClassFromString(@"OIDAuthorizationFlowSessionImplementation"),
-                                       @selector(shouldHandleURL:));
+    original = class_getInstanceMethod([OIDAuthorizationService class], @selector(shouldHandleURL:));
     swizzle = class_getInstanceMethod(self, @selector(swizzled_shouldHandleURL:));
     
     method_exchangeImplementations(original, swizzle);

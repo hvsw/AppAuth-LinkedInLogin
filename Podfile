@@ -6,6 +6,6 @@ target 'AppAuth-LinkedInLogin' do
   use_frameworks!
 
   # Pods for AppAuth-LinkedInLogin
-  pod 'AppAuth', '~> 0.91.0'
+  pod 'AppAuth'
 
 end

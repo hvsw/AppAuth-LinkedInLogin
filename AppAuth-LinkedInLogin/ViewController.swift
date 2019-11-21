@@ -53,6 +53,8 @@ final class ViewController: UIViewController {
         return LinkedInDataProvider()
     }()
 
+    var externalUserAgentSession:OIDExternalUserAgentSession?
+    
     @IBAction func startLoginWithLinkedIn(_ sender: Any) {
         let codeVerifier = OIDAuthorizationRequest.generateCodeVerifier()
         let codeChallenge = OIDAuthorizationRequest.codeChallengeS256(forVerifier: codeVerifier)
@@ -67,18 +69,19 @@ final class ViewController: UIViewController {
                                                   redirectURL: LinkedInRedirectURL,
                                                   responseType: OIDResponseTypeCode,
                                                   state: String.random(),
+                                                  nonce: nil,
                                                   codeVerifier: codeVerifier,
                                                   codeChallenge: codeChallenge,
-                                                  codeChallengeMethod: "",
+                                                  codeChallengeMethod: OIDOAuthorizationRequestCodeChallengeMethodS256,
                                                   additionalParameters: nil)
         
-        OIDAuthState.authState(byPresenting: authRequest,
-                               presenting: self) { (authState: OIDAuthState?, error: Error?) in
-                                if (authState != nil) {
-                                    print(authState!)
-                                } else {
-                                    print(error ?? "no error")
-                                }
+        self.externalUserAgentSession = OIDAuthState
+            .authState(byPresenting: authRequest, presenting: UIViewController()) { (authState: OIDAuthState?, error: Error?) in
+                if (authState != nil) {
+                    print(authState!)
+                } else {
+                    print(error ?? "no error")
+                }
         }
     }
     
