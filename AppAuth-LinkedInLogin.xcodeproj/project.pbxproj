@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6205AF3E2386C5D3005CEB36 /* AppAuthSocialSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205AF3C2386C5D3005CEB36 /* AppAuthSocialSwizzle.m */; };
+		623859332386B84B00808B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623859322386B84B00808B55 /* AppDelegate.swift */; };
+		623859352386B84B00808B55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623859342386B84B00808B55 /* ViewController.swift */; };
+		623859382386B84B00808B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623859362386B84B00808B55 /* Main.storyboard */; };
+		6238593A2386B84D00808B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623859392386B84D00808B55 /* Assets.xcassets */; };
+		6238593D2386B84D00808B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6238593B2386B84D00808B55 /* LaunchScreen.storyboard */; };
+		62D5D9612386BF2B00381C37 /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D5D9602386BF2B00381C37 /* PrivateConstants.swift */; };
+		C52DEE2F1942D258C449B2C1 /* Pods_AppAuth_LinkedInLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D60F7BAC37D205DB8784AF9 /* Pods_AppAuth_LinkedInLogin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D60F7BAC37D205DB8784AF9 /* Pods_AppAuth_LinkedInLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppAuth_LinkedInLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D536DCD90FEDC5027015700 /* Pods-AppAuth-LinkedInLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAuth-LinkedInLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppAuth-LinkedInLogin/Pods-AppAuth-LinkedInLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		6205AF3B2386C5D2005CEB36 /* AppAuth-LinkedInLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppAuth-LinkedInLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		6205AF3C2386C5D3005CEB36 /* AppAuthSocialSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAuthSocialSwizzle.m; sourceTree = "<group>"; };
+		6205AF3D2386C5D3005CEB36 /* AppAuthSocialSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAuthSocialSwizzle.h; sourceTree = "<group>"; };
+		6238592F2386B84B00808B55 /* AppAuth-LinkedInLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppAuth-LinkedInLogin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		623859322386B84B00808B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		623859342386B84B00808B55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		623859372386B84B00808B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		623859392386B84D00808B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6238593C2386B84D00808B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6238593E2386B84D00808B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62D5D9602386BF2B00381C37 /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
+		AB33A264C69ACB968C379EEB /* Pods-AppAuth-LinkedInLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAuth-LinkedInLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppAuth-LinkedInLogin/Pods-AppAuth-LinkedInLogin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6238592C2386B84B00808B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52DEE2F1942D258C449B2C1 /* Pods_AppAuth_LinkedInLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		333EA57E97FDB7C4C5A7745B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D60F7BAC37D205DB8784AF9 /* Pods_AppAuth_LinkedInLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5987E726EBA86CD2E96E5D7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D536DCD90FEDC5027015700 /* Pods-AppAuth-LinkedInLogin.debug.xcconfig */,
+				AB33A264C69ACB968C379EEB /* Pods-AppAuth-LinkedInLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		623859262386B84B00808B55 = {
+			isa = PBXGroup;
+			children = (
+				623859312386B84B00808B55 /* AppAuth-LinkedInLogin */,
+				623859302386B84B00808B55 /* Products */,
+				5987E726EBA86CD2E96E5D7B /* Pods */,
+				333EA57E97FDB7C4C5A7745B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		623859302386B84B00808B55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6238592F2386B84B00808B55 /* AppAuth-LinkedInLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		623859312386B84B00808B55 /* AppAuth-LinkedInLogin */ = {
+			isa = PBXGroup;
+			children = (
+				623859322386B84B00808B55 /* AppDelegate.swift */,
+				623859342386B84B00808B55 /* ViewController.swift */,
+				623859362386B84B00808B55 /* Main.storyboard */,
+				623859392386B84D00808B55 /* Assets.xcassets */,
+				6238593B2386B84D00808B55 /* LaunchScreen.storyboard */,
+				6238593E2386B84D00808B55 /* Info.plist */,
+				62D5D9602386BF2B00381C37 /* PrivateConstants.swift */,
+				6205AF3D2386C5D3005CEB36 /* AppAuthSocialSwizzle.h */,
+				6205AF3C2386C5D3005CEB36 /* AppAuthSocialSwizzle.m */,
+				6205AF3B2386C5D2005CEB36 /* AppAuth-LinkedInLogin-Bridging-Header.h */,
+			);
+			path = "AppAuth-LinkedInLogin";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6238592E2386B84B00808B55 /* AppAuth-LinkedInLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 623859412386B84D00808B55 /* Build configuration list for PBXNativeTarget "AppAuth-LinkedInLogin" */;
+			buildPhases = (
+				7AC174F9453FE2C7ADE02D22 /* [CP] Check Pods Manifest.lock */,
+				6238592B2386B84B00808B55 /* Sources */,
+				6238592C2386B84B00808B55 /* Frameworks */,
+				6238592D2386B84B00808B55 /* Resources */,
+				9929451A7381AB8FF81A5C23 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppAuth-LinkedInLogin";
+			productName = "AppAuth-LinkedInLogin";
+			productReference = 6238592F2386B84B00808B55 /* AppAuth-LinkedInLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		623859272386B84B00808B55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Henrique Valcanaia";
+				TargetAttributes = {
+					6238592E2386B84B00808B55 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 6238592A2386B84B00808B55 /* Build configuration list for PBXProject "AppAuth-LinkedInLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 623859262386B84B00808B55;
+			productRefGroup = 623859302386B84B00808B55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6238592E2386B84B00808B55 /* AppAuth-LinkedInLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6238592D2386B84B00808B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6238593D2386B84D00808B55 /* LaunchScreen.storyboard in Resources */,
+				6238593A2386B84D00808B55 /* Assets.xcassets in Resources */,
+				623859382386B84B00808B55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AC174F9453FE2C7ADE02D22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppAuth-LinkedInLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9929451A7381AB8FF81A5C23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppAuth-LinkedInLogin/Pods-AppAuth-LinkedInLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppAuth-LinkedInLogin/Pods-AppAuth-LinkedInLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6238592B2386B84B00808B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623859352386B84B00808B55 /* ViewController.swift in Sources */,
+				62D5D9612386BF2B00381C37 /* PrivateConstants.swift in Sources */,
+				623859332386B84B00808B55 /* AppDelegate.swift in Sources */,
+				6205AF3E2386C5D3005CEB36 /* AppAuthSocialSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		623859362386B84B00808B55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				623859372386B84B00808B55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6238593B2386B84D00808B55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6238593C2386B84D00808B55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6238593F2386B84D00808B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		623859402386B84D00808B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		623859422386B84D00808B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D536DCD90FEDC5027015700 /* Pods-AppAuth-LinkedInLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "AppAuth-LinkedInLogin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henriquevalcanaia.AppAuth-LinkedInLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppAuth-LinkedInLogin/AppAuth-LinkedInLogin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		623859432386B84D00808B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB33A264C69ACB968C379EEB /* Pods-AppAuth-LinkedInLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "AppAuth-LinkedInLogin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henriquevalcanaia.AppAuth-LinkedInLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppAuth-LinkedInLogin/AppAuth-LinkedInLogin-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6238592A2386B84B00808B55 /* Build configuration list for PBXProject "AppAuth-LinkedInLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6238593F2386B84D00808B55 /* Debug */,
+				623859402386B84D00808B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		623859412386B84D00808B55 /* Build configuration list for PBXNativeTarget "AppAuth-LinkedInLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623859422386B84D00808B55 /* Debug */,
+				623859432386B84D00808B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 623859272386B84B00808B55 /* Project object */;
+}
